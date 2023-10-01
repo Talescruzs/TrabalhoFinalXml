@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe versao="2.00" Id="NFe35130309339936000205550030008469231382917898">
+            <ide>
+                <cUF>35</cUF>
+                <cNF>38291789</cNF>
+                <natOp>VENDA DE MERCADORIAS</natOp>
+                <indPag>0</indPag>
+                <mod>55</mod>
+                <serie>3</serie>
+                <nNF>846923</nNF>
+                <dEmi>2013-03-20</dEmi>
+                <tpNF>1</tpNF>
+                <cMunFG>3505708</cMunFG>
+                <tpImp>1</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>8</cDV>
+                <tpAmb>1</tpAmb>
+                <finNFe>1</finNFe>
+                <procEmi>0</procEmi>
+                <verProc>ABACOS V50B0070</verProc>
+            </ide>
+            <emit>
+                <CNPJ>09339936000205</CNPJ>
+                <xNome>NS2.Com Internet SA</xNome>
+                <xFant>NETSHOES</xFant>
+                <enderEmit>
+                    <xLgr>AV ARUANA</xLgr>
+                    <nro>854</nro>
+                    <xBairro>TAMBORE</xBairro>
+                    <cMun>3505708</cMun>
+                    <xMun>BARUERI</xMun>
+                    <UF>SP</UF>
+                    <CEP>06460908</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                </enderEmit>
+                <IE>206257690116</IE>
+                <CRT>3</CRT>
+            </emit>
+            <dest>
+                <CPF>12345678900</CPF>
+                <xNome>GIOVANI LIBRELOTTO</xNome>
+                <enderDest>
+                    <xLgr>AV RORAIMA</xLgr>
+                    <nro>1000</nro>
+                    <xCpl>SALA 387</xCpl>
+                    <xBairro>CAMOBI</xBairro>
+                    <cMun>4316907</cMun>
+                    <xMun>SANTA MARIA</xMun>
+                    <UF>RS</UF>
+                    <CEP>97010041</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>Brasil</xPais>
+                    <fone>5591234567</fone>
+                </enderDest>
+                <IE>ISENTO</IE>
+                <email>librelotto@mail.com</email>
+            </dest>
+            <det nItem="1">
+                <prod>
+                    <cProd>025-1220-318-40</cProd>
+                    <cEAN>4051411545402</cEAN>
+                    <xProd>Chuteira Puma Esito Finale IT</xProd>
+                    <NCM>64029990</NCM>
+                    <CFOP>6108</CFOP>
+                    <uCom>PAR</uCom>
+                    <qCom>1</qCom>
+                    <vUnCom>94.91</vUnCom>
+                    <vProd>94.91</vProd>
+                    <cEANTrib>4051411545402</cEANTrib>
+                    <uTrib>PAR</uTrib>
+                    <qTrib>1</qTrib>
+                    <vUnTrib>94.91</vUnTrib>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>2</orig>
+                            <CST>00</CST>
+                            <modBC>3</modBC>
+                            <vBC>94.91</vBC>
+                            <pICMS>18.00</pICMS>
+                            <vICMS>17.08</vICMS>
+                        </ICMS00>
+                    </ICMS>
+                    <IPI>
+                        <cEnq>999</cEnq>
+                        <IPINT>
+                            <CST>53</CST>
+                        </IPINT>
+                    </IPI>
+                    <PIS>
+                        <PISAliq>
+                            <CST>01</CST>
+                            <vBC>94.91</vBC>
+                            <pPIS>1.65</pPIS>
+                            <vPIS>1.57</vPIS>
+                        </PISAliq>
+                    </PIS>
+                    <COFINS>
+                        <COFINSAliq>
+                            <CST>01</CST>
+                            <vBC>94.91</vBC>
+                            <pCOFINS>7.60</pCOFINS>
+                            <vCOFINS>7.21</vCOFINS>
+                        </COFINSAliq>
+                    </COFINS>
+                </imposto>
+                <infAdProd>EAN 4051411545402</infAdProd>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>94.91</vBC>
+                    <vICMS>17.08</vICMS>
+                    <vBCST>0.00</vBCST>
+                    <vST>0.00</vST>
+                    <vProd>94.91</vProd>
+                    <vFrete>0.00</vFrete>
+                    <vSeg>0.00</vSeg>
+                    <vDesc>0.00</vDesc>
+                    <vII>0.00</vII>
+                    <vIPI>0.00</vIPI>
+                    <vPIS>1.57</vPIS>
+                    <vCOFINS>7.21</vCOFINS>
+                    <vOutro>0.00</vOutro>
+                    <vNF>94.91</vNF>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>0</modFrete>
+                <transporta>
+                    <xNome>EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS</xNome>
+                    <IE/>
+                </transporta>
+                <vol>
+                    <qVol>1</qVol>
+                    <pesoL>0.900</pesoL>
+                    <pesoB>0.900</pesoB>
+                </vol>
+            </transp>
+            <infAdic>
+                <infCpl>Pedido 10161609426 Pedido interno 24205819 Condicoes de Pagto BOLETO
+                    ANTECIPADO = 94,91</infCpl>
+            </infAdic>
+        </infNFe>
+        <Signature>
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                <Reference URI="#NFe35130309339936000205550030008469231382917898">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                        <Transform Algorithm="http://www.w3.org	/TR/2001/REC-xml-c14n-20010315"/>
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                    <DigestValue>Khhl3Fgh30yT1OL5Y1bBiTEIPxU=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>fH0tPgKJmOOueVjigRVG7sDk3gDnYz89enY4CkcG6l7eEfe2+YsD3Hu+5OiPElFrBt4mw5+eNk4WHU+ju/XYMheOwZNcTHelZp7s1OFcv0aTNCZKCWgLKOQQNGQgWT5t6H78QPmGe9Vho1cczxwBln+VmaT8B5NI8kNqgFMvo8GYguKBZk2ICyyDggOm5vEiGEZCB7m3Dci8H+Mmho3IfG4wbshJdBpESxJKfsP7CJizYO9aQTLa0eDi9A+8FOWi6v8prpoeWpGnq/ZGsQiQnGmw/yFe8OVcSoTXx1d5rbNDcPLS3W2i+SNn9g1zI5HucBuJ4kIpaJpXxQoAfeH+GQ==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>MIIIPjCCBiagAwIBAgIQZFS8UWZ/4nqslJtmQDCi4jANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwOTEzMDAwMDAwWhcNMTMwOTEyMjM1OTU5WjCB1jELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU5OTY2NzEdMBsGA1UEAxMUTlMyIENPTSBJTlRFUk5FVCBTIEExJTAjBgkqhkiG9w0BCQEWFmZpc2NhbEBuZXRzaG9lcy5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCbi5U3E1ot6/g+Q6P0qzC10/duAwL+iJVSsqBrMj26VvvMkUzqNH2nYaiXbpyNsCB+VLlWM4wd3PM8JdpYr3ZvhjF97NXJu04A76/zExO45nSFXQr0H7xW9TJSwZPrZo0nzepg01gNOxdLpie5xdOD+e5PrK3zuc+2oFM5X4zSCGKr6iLu08+01Y6RWxl1KXZfvV9UBpqWlkpyNQiliu+ZyvfIzUVEcz7pATj5K18KHhAF+XLx6/WGwvvY+yQbWKQvoRdBFbuXRy46TBAvIR3+UQonCNfJfqscX70mX4rm3DWnOpk65a5J2eQXoBhSmu5ycCxLiSKmh/jMiTQ7cnF9AgMBAAGjggNnMIIDYzCBrQYDVR0RBIGlMIGioDgGBWBMAQMEoC8ELTIwMDExOTc0MTY4NzY0NDE4NzMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAaBgVgTAEDAqARBA9NQVJDSU8gS1VNUlVJQU6gGQYFYEwBAwOgEAQOMDkzMzk5MzYwMDAxMTagFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRZmaXNjYWxAbmV0c2hvZXMuY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYDVR0PAQH/BAQDAgXgMIGJBgNVHSAEgYEwfzB9BgZgTAECAQswczBxBggrBgEFBQcCARZlaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX011bHRpcGxhL0RQQ19BQ19DZXJ0aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBcoFqgWIZWaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZYaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX011bHRpcGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3AuY2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAn0EicvbfA1yG+CbOjWp2EvRJXt0QmFtIAzit8RiFZfjlG4ad/P7K2SLP04D1no3+2WyiVogdHTuKJVnCTR5yKL2mEeLGUD3Vvc5cpIQg+Pce7oWYk//HJXLFmEg4zSsu0xHkJUuR1/FyZkzTTRCniaQrKEZJHwnHhcGtkrl3xnEQQt0l0U7pOctdc/LxEjarJaDdYwFqG7y7/Bzs92K6/M9BVtAlQpnsCOuCaN6qqWRD6CiH1bZMGs1Xtbo8KwrCBEaR5KpZKfoew/1uW8Tz9StCBCsB7MgY75v+PLy0jGv4qYsIYPkdzQWtQO5y11xJyKz8nmPZm/pZGInRrdmKvTOjiKYYCGcAt2wps4oM2W2zu7b5koiWRV6Q0/S9w1R/TOoFLBHGIsc/k4n7XpzMqx1EyGZQY3GPFXr6LKCtBMZLpoAiqhMHk7x7Sh4/axt+3Mo6or7KJyBpo4hozB45bD277v4O99vSHtSiU4Cz3EattDlW8Us0HG5dwmNIklmbQ+7n9ycp6XekfHe/lT2oBL8W1xPC2svsozDEV++h4b3/GqBDnV6FfmJRn9QVkhHsGYawF1u3U68vobzfal/4Qz/uGP2mF7fHBwHS5XVl3GCoVCIHcUM5M79nohzJePVOdGKImAUZJ0qPi+cdgKk4Y5oaE+WmccNgusrFWVbgH3M=</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe versao="2.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>SP_NFE_PL_006q</verAplic>
+            <chNFe>35130309339936000205550030008469231382917898</chNFe>
+            <dhRecbto>2013-03-20T09:39:04</dhRecbto>
+            <nProt>135130163038192</nProt>
+            <digVal>Khhl3Fgh30yT1OL5Y1bBiTEIPxU=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>
