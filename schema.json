@@ -1,0 +1,2532 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "nfeProc"
+    ],
+    "properties": {
+        "nfeProc": {
+            "title": "The nfeProc Schema",
+            "type": "object",
+            "default": {},
+            "required": [
+                "@xmlns",
+                "@versao",
+                "NFe",
+                "protNFe"
+            ],
+            "properties": {
+                "@xmlns": {
+                    "title": "The @xmlns Schema",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "http://www.portalfiscal.inf.br/nfe"
+                    ]
+                },
+                "@versao": {
+                    "title": "The @versao Schema",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "2.00"
+                    ]
+                },
+                "NFe": {
+                    "title": "The NFe Schema",
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "@xmlns",
+                        "infNFe",
+                        "Signature"
+                    ],
+                    "properties": {
+                        "@xmlns": {
+                            "title": "The @xmlns Schema",
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "http://www.portalfiscal.inf.br/nfe"
+                            ]
+                        },
+                        "infNFe": {
+                            "title": "The infNFe Schema",
+                            "type": "object",
+                            "default": {},
+                            "required": [
+                                "@Id",
+                                "@versao",
+                                "ide",
+                                "emit",
+                                "dest",
+                                "entrega",
+                                "det",
+                                "total",
+                                "transp",
+                                "infAdic"
+                            ],
+                            "properties": {
+                                "@Id": {
+                                    "title": "The @Id Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "NFe43121143708379008348550010000175461000000014"
+                                    ]
+                                },
+                                "@versao": {
+                                    "title": "The @versao Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "2.00"
+                                    ]
+                                },
+                                "ide": {
+                                    "title": "The ide Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "cUF",
+                                        "cNF",
+                                        "natOp",
+                                        "indPag",
+                                        "mod",
+                                        "serie",
+                                        "nNF",
+                                        "dEmi",
+                                        "tpNF",
+                                        "cMunFG",
+                                        "tpImp",
+                                        "tpEmis",
+                                        "cDV",
+                                        "tpAmb",
+                                        "finNFe",
+                                        "procEmi",
+                                        "verProc"
+                                    ],
+                                    "properties": {
+                                        "cUF": {
+                                            "title": "The cUF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "43"
+                                            ]
+                                        },
+                                        "cNF": {
+                                            "title": "The cNF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "00000001"
+                                            ]
+                                        },
+                                        "natOp": {
+                                            "title": "The natOp Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "REMESSA VINCUL.ECF VN"
+                                            ]
+                                        },
+                                        "indPag": {
+                                            "title": "The indPag Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "0"
+                                            ]
+                                        },
+                                        "mod": {
+                                            "title": "The mod Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "55"
+                                            ]
+                                        },
+                                        "serie": {
+                                            "title": "The serie Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "nNF": {
+                                            "title": "The nNF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "17546"
+                                            ]
+                                        },
+                                        "dEmi": {
+                                            "title": "The dEmi Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "2012-11-23"
+                                            ]
+                                        },
+                                        "tpNF": {
+                                            "title": "The tpNF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "cMunFG": {
+                                            "title": "The cMunFG Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "4314902"
+                                            ]
+                                        },
+                                        "tpImp": {
+                                            "title": "The tpImp Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "2"
+                                            ]
+                                        },
+                                        "tpEmis": {
+                                            "title": "The tpEmis Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "cDV": {
+                                            "title": "The cDV Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "4"
+                                            ]
+                                        },
+                                        "tpAmb": {
+                                            "title": "The tpAmb Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "finNFe": {
+                                            "title": "The finNFe Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "procEmi": {
+                                            "title": "The procEmi Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "0"
+                                            ]
+                                        },
+                                        "verProc": {
+                                            "title": "The verProc Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "NeoGrid NFe 1.9.0.1"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "cUF": "43",
+                                        "cNF": "00000001",
+                                        "natOp": "REMESSA VINCUL.ECF VN",
+                                        "indPag": "0",
+                                        "mod": "55",
+                                        "serie": "1",
+                                        "nNF": "17546",
+                                        "dEmi": "2012-11-23",
+                                        "tpNF": "1",
+                                        "cMunFG": "4314902",
+                                        "tpImp": "2",
+                                        "tpEmis": "1",
+                                        "cDV": "4",
+                                        "tpAmb": "1",
+                                        "finNFe": "1",
+                                        "procEmi": "0",
+                                        "verProc": "NeoGrid NFe 1.9.0.1"
+                                    }]
+                                },
+                                "emit": {
+                                    "title": "The emit Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "CNPJ",
+                                        "xNome",
+                                        "xFant",
+                                        "enderEmit",
+                                        "IE",
+                                        "CRT"
+                                    ],
+                                    "properties": {
+                                        "CNPJ": {
+                                            "title": "The CNPJ Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "43708379008348"
+                                            ]
+                                        },
+                                        "xNome": {
+                                            "title": "The xNome Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "FAST SHOP S.A."
+                                            ]
+                                        },
+                                        "xFant": {
+                                            "title": "The xFant Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "FAST SHOP S.A."
+                                            ]
+                                        },
+                                        "enderEmit": {
+                                            "title": "The enderEmit Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "xLgr",
+                                                "nro",
+                                                "xCpl",
+                                                "xBairro",
+                                                "cMun",
+                                                "xMun",
+                                                "UF",
+                                                "CEP",
+                                                "cPais",
+                                                "xPais",
+                                                "fone"
+                                            ],
+                                            "properties": {
+                                                "xLgr": {
+                                                    "title": "The xLgr Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "JOAO WALLIG"
+                                                    ]
+                                                },
+                                                "nro": {
+                                                    "title": "The nro Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1800"
+                                                    ]
+                                                },
+                                                "xCpl": {
+                                                    "title": "The xCpl Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "210 PISO NP"
+                                                    ]
+                                                },
+                                                "xBairro": {
+                                                    "title": "The xBairro Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "PASSO D.AREIA"
+                                                    ]
+                                                },
+                                                "cMun": {
+                                                    "title": "The cMun Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "4314902"
+                                                    ]
+                                                },
+                                                "xMun": {
+                                                    "title": "The xMun Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "PORTO ALEGRE"
+                                                    ]
+                                                },
+                                                "UF": {
+                                                    "title": "The UF Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "RS"
+                                                    ]
+                                                },
+                                                "CEP": {
+                                                    "title": "The CEP Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "91349900"
+                                                    ]
+                                                },
+                                                "cPais": {
+                                                    "title": "The cPais Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1058"
+                                                    ]
+                                                },
+                                                "xPais": {
+                                                    "title": "The xPais Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "Brasil"
+                                                    ]
+                                                },
+                                                "fone": {
+                                                    "title": "The fone Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1132323200"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "xLgr": "JOAO WALLIG",
+                                                "nro": "1800",
+                                                "xCpl": "210 PISO NP",
+                                                "xBairro": "PASSO D.AREIA",
+                                                "cMun": "4314902",
+                                                "xMun": "PORTO ALEGRE",
+                                                "UF": "RS",
+                                                "CEP": "91349900",
+                                                "cPais": "1058",
+                                                "xPais": "Brasil",
+                                                "fone": "1132323200"
+                                            }]
+                                        },
+                                        "IE": {
+                                            "title": "The IE Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "0963395009"
+                                            ]
+                                        },
+                                        "CRT": {
+                                            "title": "The CRT Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "3"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "CNPJ": "43708379008348",
+                                        "xNome": "FAST SHOP S.A.",
+                                        "xFant": "FAST SHOP S.A.",
+                                        "enderEmit": {
+                                            "xLgr": "JOAO WALLIG",
+                                            "nro": "1800",
+                                            "xCpl": "210 PISO NP",
+                                            "xBairro": "PASSO D.AREIA",
+                                            "cMun": "4314902",
+                                            "xMun": "PORTO ALEGRE",
+                                            "UF": "RS",
+                                            "CEP": "91349900",
+                                            "cPais": "1058",
+                                            "xPais": "Brasil",
+                                            "fone": "1132323200"
+                                        },
+                                        "IE": "0963395009",
+                                        "CRT": "3"
+                                    }]
+                                },
+                                "dest": {
+                                    "title": "The dest Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "CPF",
+                                        "xNome",
+                                        "enderDest",
+                                        "IE",
+                                        "email"
+                                    ],
+                                    "properties": {
+                                        "CPF": {
+                                            "title": "The CPF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "12345678900"
+                                            ]
+                                        },
+                                        "xNome": {
+                                            "title": "The xNome Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "GIOVANI LIBRELOTTO"
+                                            ]
+                                        },
+                                        "enderDest": {
+                                            "title": "The enderDest Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "xLgr",
+                                                "nro",
+                                                "xCpl",
+                                                "xBairro",
+                                                "cMun",
+                                                "xMun",
+                                                "UF",
+                                                "CEP",
+                                                "cPais",
+                                                "xPais",
+                                                "fone"
+                                            ],
+                                            "properties": {
+                                                "xLgr": {
+                                                    "title": "The xLgr Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "AV RORAIMA"
+                                                    ]
+                                                },
+                                                "nro": {
+                                                    "title": "The nro Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1000"
+                                                    ]
+                                                },
+                                                "xCpl": {
+                                                    "title": "The xCpl Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "SALA 387"
+                                                    ]
+                                                },
+                                                "xBairro": {
+                                                    "title": "The xBairro Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "CAMOBI"
+                                                    ]
+                                                },
+                                                "cMun": {
+                                                    "title": "The cMun Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "4316907"
+                                                    ]
+                                                },
+                                                "xMun": {
+                                                    "title": "The xMun Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "SANTA MARIA"
+                                                    ]
+                                                },
+                                                "UF": {
+                                                    "title": "The UF Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "RS"
+                                                    ]
+                                                },
+                                                "CEP": {
+                                                    "title": "The CEP Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "97010041"
+                                                    ]
+                                                },
+                                                "cPais": {
+                                                    "title": "The cPais Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1058"
+                                                    ]
+                                                },
+                                                "xPais": {
+                                                    "title": "The xPais Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "Brasil"
+                                                    ]
+                                                },
+                                                "fone": {
+                                                    "title": "The fone Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "5591234567"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "xLgr": "AV RORAIMA",
+                                                "nro": "1000",
+                                                "xCpl": "SALA 387",
+                                                "xBairro": "CAMOBI",
+                                                "cMun": "4316907",
+                                                "xMun": "SANTA MARIA",
+                                                "UF": "RS",
+                                                "CEP": "97010041",
+                                                "cPais": "1058",
+                                                "xPais": "Brasil",
+                                                "fone": "5591234567"
+                                            }]
+                                        },
+                                        "IE": {
+                                            "title": "The IE Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "ISENTO"
+                                            ]
+                                        },
+                                        "email": {
+                                            "title": "The email Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "librelotto@mail.com"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "CPF": "12345678900",
+                                        "xNome": "GIOVANI LIBRELOTTO",
+                                        "enderDest": {
+                                            "xLgr": "AV RORAIMA",
+                                            "nro": "1000",
+                                            "xCpl": "SALA 387",
+                                            "xBairro": "CAMOBI",
+                                            "cMun": "4316907",
+                                            "xMun": "SANTA MARIA",
+                                            "UF": "RS",
+                                            "CEP": "97010041",
+                                            "cPais": "1058",
+                                            "xPais": "Brasil",
+                                            "fone": "5591234567"
+                                        },
+                                        "IE": "ISENTO",
+                                        "email": "librelotto@mail.com"
+                                    }]
+                                },
+                                "entrega": {
+                                    "title": "The entrega Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "CPF",
+                                        "xLgr",
+                                        "nro",
+                                        "xCpl",
+                                        "xBairro",
+                                        "cMun",
+                                        "xMun",
+                                        "UF"
+                                    ],
+                                    "properties": {
+                                        "CPF": {
+                                            "title": "The CPF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "12345678900"
+                                            ]
+                                        },
+                                        "xLgr": {
+                                            "title": "The xLgr Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "AV RORAIMA"
+                                            ]
+                                        },
+                                        "nro": {
+                                            "title": "The nro Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1000"
+                                            ]
+                                        },
+                                        "xCpl": {
+                                            "title": "The xCpl Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "SALA 387"
+                                            ]
+                                        },
+                                        "xBairro": {
+                                            "title": "The xBairro Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "CAMOBI"
+                                            ]
+                                        },
+                                        "cMun": {
+                                            "title": "The cMun Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "4316907"
+                                            ]
+                                        },
+                                        "xMun": {
+                                            "title": "The xMun Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "SANTA MARIA"
+                                            ]
+                                        },
+                                        "UF": {
+                                            "title": "The UF Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "RS"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "CPF": "12345678900",
+                                        "xLgr": "AV RORAIMA",
+                                        "nro": "1000",
+                                        "xCpl": "SALA 387",
+                                        "xBairro": "CAMOBI",
+                                        "cMun": "4316907",
+                                        "xMun": "SANTA MARIA",
+                                        "UF": "RS"
+                                    }]
+                                },
+                                "det": {
+                                    "title": "The det Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "@nItem",
+                                        "prod",
+                                        "imposto"
+                                    ],
+                                    "properties": {
+                                        "@nItem": {
+                                            "title": "The @nItem Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "1"
+                                            ]
+                                        },
+                                        "prod": {
+                                            "title": "The prod Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "cProd",
+                                                "cEAN",
+                                                "xProd",
+                                                "NCM",
+                                                "CFOP",
+                                                "uCom",
+                                                "qCom",
+                                                "vUnCom",
+                                                "vProd",
+                                                "cEANTrib",
+                                                "uTrib",
+                                                "qTrib",
+                                                "vUnTrib",
+                                                "indTot"
+                                            ],
+                                            "properties": {
+                                                "cProd": {
+                                                    "title": "The cProd Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "AEMD387BZA"
+                                                    ]
+                                                },
+                                                "cEAN": {
+                                                    "title": "The cEAN Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0885909545759"
+                                                    ]
+                                                },
+                                                "xProd": {
+                                                    "title": "The xProd Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A"
+                                                    ]
+                                                },
+                                                "NCM": {
+                                                    "title": "The NCM Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "84715010"
+                                                    ]
+                                                },
+                                                "CFOP": {
+                                                    "title": "The CFOP Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "5929"
+                                                    ]
+                                                },
+                                                "uCom": {
+                                                    "title": "The uCom Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "PC"
+                                                    ]
+                                                },
+                                                "qCom": {
+                                                    "title": "The qCom Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1.0000"
+                                                    ]
+                                                },
+                                                "vUnCom": {
+                                                    "title": "The vUnCom Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2269.0000"
+                                                    ]
+                                                },
+                                                "vProd": {
+                                                    "title": "The vProd Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2269.00"
+                                                    ]
+                                                },
+                                                "cEANTrib": {
+                                                    "title": "The cEANTrib Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0885909545759"
+                                                    ]
+                                                },
+                                                "uTrib": {
+                                                    "title": "The uTrib Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "PC"
+                                                    ]
+                                                },
+                                                "qTrib": {
+                                                    "title": "The qTrib Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1.0000"
+                                                    ]
+                                                },
+                                                "vUnTrib": {
+                                                    "title": "The vUnTrib Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2269.0000"
+                                                    ]
+                                                },
+                                                "indTot": {
+                                                    "title": "The indTot Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "cProd": "AEMD387BZA",
+                                                "cEAN": "0885909545759",
+                                                "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                                                "NCM": "84715010",
+                                                "CFOP": "5929",
+                                                "uCom": "PC",
+                                                "qCom": "1.0000",
+                                                "vUnCom": "2269.0000",
+                                                "vProd": "2269.00",
+                                                "cEANTrib": "0885909545759",
+                                                "uTrib": "PC",
+                                                "qTrib": "1.0000",
+                                                "vUnTrib": "2269.0000",
+                                                "indTot": "1"
+                                            }]
+                                        },
+                                        "imposto": {
+                                            "title": "The imposto Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "ICMS",
+                                                "PIS",
+                                                "COFINS"
+                                            ],
+                                            "properties": {
+                                                "ICMS": {
+                                                    "title": "The ICMS Schema",
+                                                    "type": "object",
+                                                    "default": {},
+                                                    "required": [
+                                                        "ICMS60"
+                                                    ],
+                                                    "properties": {
+                                                        "ICMS60": {
+                                                            "title": "The ICMS60 Schema",
+                                                            "type": "object",
+                                                            "default": {},
+                                                            "required": [
+                                                                "orig",
+                                                                "CST",
+                                                                "vBCSTRet",
+                                                                "vICMSSTRet"
+                                                            ],
+                                                            "properties": {
+                                                                "orig": {
+                                                                    "title": "The orig Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "2"
+                                                                    ]
+                                                                },
+                                                                "CST": {
+                                                                    "title": "The CST Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "60"
+                                                                    ]
+                                                                },
+                                                                "vBCSTRet": {
+                                                                    "title": "The vBCSTRet Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "2229.90"
+                                                                    ]
+                                                                },
+                                                                "vICMSSTRet": {
+                                                                    "title": "The vICMSSTRet Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "76.91"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "examples": [{
+                                                                "orig": "2",
+                                                                "CST": "60",
+                                                                "vBCSTRet": "2229.90",
+                                                                "vICMSSTRet": "76.91"
+                                                            }]
+                                                        }
+                                                    },
+                                                    "examples": [{
+                                                        "ICMS60": {
+                                                            "orig": "2",
+                                                            "CST": "60",
+                                                            "vBCSTRet": "2229.90",
+                                                            "vICMSSTRet": "76.91"
+                                                        }
+                                                    }]
+                                                },
+                                                "PIS": {
+                                                    "title": "The PIS Schema",
+                                                    "type": "object",
+                                                    "default": {},
+                                                    "required": [
+                                                        "PISNT"
+                                                    ],
+                                                    "properties": {
+                                                        "PISNT": {
+                                                            "title": "The PISNT Schema",
+                                                            "type": "object",
+                                                            "default": {},
+                                                            "required": [
+                                                                "CST"
+                                                            ],
+                                                            "properties": {
+                                                                "CST": {
+                                                                    "title": "The CST Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "08"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "examples": [{
+                                                                "CST": "08"
+                                                            }]
+                                                        }
+                                                    },
+                                                    "examples": [{
+                                                        "PISNT": {
+                                                            "CST": "08"
+                                                        }
+                                                    }]
+                                                },
+                                                "COFINS": {
+                                                    "title": "The COFINS Schema",
+                                                    "type": "object",
+                                                    "default": {},
+                                                    "required": [
+                                                        "COFINSNT"
+                                                    ],
+                                                    "properties": {
+                                                        "COFINSNT": {
+                                                            "title": "The COFINSNT Schema",
+                                                            "type": "object",
+                                                            "default": {},
+                                                            "required": [
+                                                                "CST"
+                                                            ],
+                                                            "properties": {
+                                                                "CST": {
+                                                                    "title": "The CST Schema",
+                                                                    "type": "string",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "08"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "examples": [{
+                                                                "CST": "08"
+                                                            }]
+                                                        }
+                                                    },
+                                                    "examples": [{
+                                                        "COFINSNT": {
+                                                            "CST": "08"
+                                                        }
+                                                    }]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "ICMS": {
+                                                    "ICMS60": {
+                                                        "orig": "2",
+                                                        "CST": "60",
+                                                        "vBCSTRet": "2229.90",
+                                                        "vICMSSTRet": "76.91"
+                                                    }
+                                                },
+                                                "PIS": {
+                                                    "PISNT": {
+                                                        "CST": "08"
+                                                    }
+                                                },
+                                                "COFINS": {
+                                                    "COFINSNT": {
+                                                        "CST": "08"
+                                                    }
+                                                }
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "@nItem": "1",
+                                        "prod": {
+                                            "cProd": "AEMD387BZA",
+                                            "cEAN": "0885909545759",
+                                            "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                                            "NCM": "84715010",
+                                            "CFOP": "5929",
+                                            "uCom": "PC",
+                                            "qCom": "1.0000",
+                                            "vUnCom": "2269.0000",
+                                            "vProd": "2269.00",
+                                            "cEANTrib": "0885909545759",
+                                            "uTrib": "PC",
+                                            "qTrib": "1.0000",
+                                            "vUnTrib": "2269.0000",
+                                            "indTot": "1"
+                                        },
+                                        "imposto": {
+                                            "ICMS": {
+                                                "ICMS60": {
+                                                    "orig": "2",
+                                                    "CST": "60",
+                                                    "vBCSTRet": "2229.90",
+                                                    "vICMSSTRet": "76.91"
+                                                }
+                                            },
+                                            "PIS": {
+                                                "PISNT": {
+                                                    "CST": "08"
+                                                }
+                                            },
+                                            "COFINS": {
+                                                "COFINSNT": {
+                                                    "CST": "08"
+                                                }
+                                            }
+                                        }
+                                    }]
+                                },
+                                "total": {
+                                    "title": "The total Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "ICMSTot"
+                                    ],
+                                    "properties": {
+                                        "ICMSTot": {
+                                            "title": "The ICMSTot Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "vBC",
+                                                "vICMS",
+                                                "vBCST",
+                                                "vST",
+                                                "vProd",
+                                                "vFrete",
+                                                "vSeg",
+                                                "vDesc",
+                                                "vII",
+                                                "vIPI",
+                                                "vPIS",
+                                                "vCOFINS",
+                                                "vOutro",
+                                                "vNF"
+                                            ],
+                                            "properties": {
+                                                "vBC": {
+                                                    "title": "The vBC Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vICMS": {
+                                                    "title": "The vICMS Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vBCST": {
+                                                    "title": "The vBCST Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vST": {
+                                                    "title": "The vST Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vProd": {
+                                                    "title": "The vProd Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2269.00"
+                                                    ]
+                                                },
+                                                "vFrete": {
+                                                    "title": "The vFrete Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vSeg": {
+                                                    "title": "The vSeg Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vDesc": {
+                                                    "title": "The vDesc Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vII": {
+                                                    "title": "The vII Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vIPI": {
+                                                    "title": "The vIPI Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vPIS": {
+                                                    "title": "The vPIS Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vCOFINS": {
+                                                    "title": "The vCOFINS Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vOutro": {
+                                                    "title": "The vOutro Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0.00"
+                                                    ]
+                                                },
+                                                "vNF": {
+                                                    "title": "The vNF Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2269.00"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "vBC": "0.00",
+                                                "vICMS": "0.00",
+                                                "vBCST": "0.00",
+                                                "vST": "0.00",
+                                                "vProd": "2269.00",
+                                                "vFrete": "0.00",
+                                                "vSeg": "0.00",
+                                                "vDesc": "0.00",
+                                                "vII": "0.00",
+                                                "vIPI": "0.00",
+                                                "vPIS": "0.00",
+                                                "vCOFINS": "0.00",
+                                                "vOutro": "0.00",
+                                                "vNF": "2269.00"
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "ICMSTot": {
+                                            "vBC": "0.00",
+                                            "vICMS": "0.00",
+                                            "vBCST": "0.00",
+                                            "vST": "0.00",
+                                            "vProd": "2269.00",
+                                            "vFrete": "0.00",
+                                            "vSeg": "0.00",
+                                            "vDesc": "0.00",
+                                            "vII": "0.00",
+                                            "vIPI": "0.00",
+                                            "vPIS": "0.00",
+                                            "vCOFINS": "0.00",
+                                            "vOutro": "0.00",
+                                            "vNF": "2269.00"
+                                        }
+                                    }]
+                                },
+                                "transp": {
+                                    "title": "The transp Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "modFrete",
+                                        "vol"
+                                    ],
+                                    "properties": {
+                                        "modFrete": {
+                                            "title": "The modFrete Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "9"
+                                            ]
+                                        },
+                                        "vol": {
+                                            "title": "The vol Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "qVol",
+                                                "esp",
+                                                "pesoL",
+                                                "pesoB"
+                                            ],
+                                            "properties": {
+                                                "qVol": {
+                                                    "title": "The qVol Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "1"
+                                                    ]
+                                                },
+                                                "esp": {
+                                                    "title": "The esp Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "volume"
+                                                    ]
+                                                },
+                                                "pesoL": {
+                                                    "title": "The pesoL Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2.500"
+                                                    ]
+                                                },
+                                                "pesoB": {
+                                                    "title": "The pesoB Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2.500"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "qVol": "1",
+                                                "esp": "volume",
+                                                "pesoL": "2.500",
+                                                "pesoB": "2.500"
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "modFrete": "9",
+                                        "vol": {
+                                            "qVol": "1",
+                                            "esp": "volume",
+                                            "pesoL": "2.500",
+                                            "pesoB": "2.500"
+                                        }
+                                    }]
+                                },
+                                "infAdic": {
+                                    "title": "The infAdic Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "infCpl"
+                                    ],
+                                    "properties": {
+                                        "infCpl": {
+                                            "title": "The infCpl Schema",
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                                    }]
+                                }
+                            },
+                            "examples": [{
+                                "@Id": "NFe43121143708379008348550010000175461000000014",
+                                "@versao": "2.00",
+                                "ide": {
+                                    "cUF": "43",
+                                    "cNF": "00000001",
+                                    "natOp": "REMESSA VINCUL.ECF VN",
+                                    "indPag": "0",
+                                    "mod": "55",
+                                    "serie": "1",
+                                    "nNF": "17546",
+                                    "dEmi": "2012-11-23",
+                                    "tpNF": "1",
+                                    "cMunFG": "4314902",
+                                    "tpImp": "2",
+                                    "tpEmis": "1",
+                                    "cDV": "4",
+                                    "tpAmb": "1",
+                                    "finNFe": "1",
+                                    "procEmi": "0",
+                                    "verProc": "NeoGrid NFe 1.9.0.1"
+                                },
+                                "emit": {
+                                    "CNPJ": "43708379008348",
+                                    "xNome": "FAST SHOP S.A.",
+                                    "xFant": "FAST SHOP S.A.",
+                                    "enderEmit": {
+                                        "xLgr": "JOAO WALLIG",
+                                        "nro": "1800",
+                                        "xCpl": "210 PISO NP",
+                                        "xBairro": "PASSO D.AREIA",
+                                        "cMun": "4314902",
+                                        "xMun": "PORTO ALEGRE",
+                                        "UF": "RS",
+                                        "CEP": "91349900",
+                                        "cPais": "1058",
+                                        "xPais": "Brasil",
+                                        "fone": "1132323200"
+                                    },
+                                    "IE": "0963395009",
+                                    "CRT": "3"
+                                },
+                                "dest": {
+                                    "CPF": "12345678900",
+                                    "xNome": "GIOVANI LIBRELOTTO",
+                                    "enderDest": {
+                                        "xLgr": "AV RORAIMA",
+                                        "nro": "1000",
+                                        "xCpl": "SALA 387",
+                                        "xBairro": "CAMOBI",
+                                        "cMun": "4316907",
+                                        "xMun": "SANTA MARIA",
+                                        "UF": "RS",
+                                        "CEP": "97010041",
+                                        "cPais": "1058",
+                                        "xPais": "Brasil",
+                                        "fone": "5591234567"
+                                    },
+                                    "IE": "ISENTO",
+                                    "email": "librelotto@mail.com"
+                                },
+                                "entrega": {
+                                    "CPF": "12345678900",
+                                    "xLgr": "AV RORAIMA",
+                                    "nro": "1000",
+                                    "xCpl": "SALA 387",
+                                    "xBairro": "CAMOBI",
+                                    "cMun": "4316907",
+                                    "xMun": "SANTA MARIA",
+                                    "UF": "RS"
+                                },
+                                "det": {
+                                    "@nItem": "1",
+                                    "prod": {
+                                        "cProd": "AEMD387BZA",
+                                        "cEAN": "0885909545759",
+                                        "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                                        "NCM": "84715010",
+                                        "CFOP": "5929",
+                                        "uCom": "PC",
+                                        "qCom": "1.0000",
+                                        "vUnCom": "2269.0000",
+                                        "vProd": "2269.00",
+                                        "cEANTrib": "0885909545759",
+                                        "uTrib": "PC",
+                                        "qTrib": "1.0000",
+                                        "vUnTrib": "2269.0000",
+                                        "indTot": "1"
+                                    },
+                                    "imposto": {
+                                        "ICMS": {
+                                            "ICMS60": {
+                                                "orig": "2",
+                                                "CST": "60",
+                                                "vBCSTRet": "2229.90",
+                                                "vICMSSTRet": "76.91"
+                                            }
+                                        },
+                                        "PIS": {
+                                            "PISNT": {
+                                                "CST": "08"
+                                            }
+                                        },
+                                        "COFINS": {
+                                            "COFINSNT": {
+                                                "CST": "08"
+                                            }
+                                        }
+                                    }
+                                },
+                                "total": {
+                                    "ICMSTot": {
+                                        "vBC": "0.00",
+                                        "vICMS": "0.00",
+                                        "vBCST": "0.00",
+                                        "vST": "0.00",
+                                        "vProd": "2269.00",
+                                        "vFrete": "0.00",
+                                        "vSeg": "0.00",
+                                        "vDesc": "0.00",
+                                        "vII": "0.00",
+                                        "vIPI": "0.00",
+                                        "vPIS": "0.00",
+                                        "vCOFINS": "0.00",
+                                        "vOutro": "0.00",
+                                        "vNF": "2269.00"
+                                    }
+                                },
+                                "transp": {
+                                    "modFrete": "9",
+                                    "vol": {
+                                        "qVol": "1",
+                                        "esp": "volume",
+                                        "pesoL": "2.500",
+                                        "pesoB": "2.500"
+                                    }
+                                },
+                                "infAdic": {
+                                    "infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                                }
+                            }]
+                        },
+                        "Signature": {
+                            "title": "The Signature Schema",
+                            "type": "object",
+                            "default": {},
+                            "required": [
+                                "SignedInfo",
+                                "SignatureValue",
+                                "KeyInfo"
+                            ],
+                            "properties": {
+                                "SignedInfo": {
+                                    "title": "The SignedInfo Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "CanonicalizationMethod",
+                                        "SignatureMethod",
+                                        "Reference"
+                                    ],
+                                    "properties": {
+                                        "CanonicalizationMethod": {
+                                            "title": "The CanonicalizationMethod Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "@Algorithm"
+                                            ],
+                                            "properties": {
+                                                "@Algorithm": {
+                                                    "title": "The @Algorithm Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                            }]
+                                        },
+                                        "SignatureMethod": {
+                                            "title": "The SignatureMethod Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "@Algorithm"
+                                            ],
+                                            "properties": {
+                                                "@Algorithm": {
+                                                    "title": "The @Algorithm Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                                            }]
+                                        },
+                                        "Reference": {
+                                            "title": "The Reference Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "@URI",
+                                                "Transforms",
+                                                "DigestMethod",
+                                                "DigestValue"
+                                            ],
+                                            "properties": {
+                                                "@URI": {
+                                                    "title": "The @URI Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "#NFe43121143708379008348550010000175461000000014"
+                                                    ]
+                                                },
+                                                "Transforms": {
+                                                    "title": "The Transforms Schema",
+                                                    "type": "object",
+                                                    "default": {},
+                                                    "required": [
+                                                        "Transform"
+                                                    ],
+                                                    "properties": {
+                                                        "Transform": {
+                                                            "title": "The Transform Schema",
+                                                            "type": "array",
+                                                            "default": [],
+                                                            "items": {
+                                                                "title": "A Schema",
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "@Algorithm"
+                                                                ],
+                                                                "properties": {
+                                                                    "@Algorithm": {
+                                                                        "title": "The @Algorithm Schema",
+                                                                        "type": "string",
+                                                                        "examples": [
+                                                                            "http://www.w3.org/2000/09/xmldsig#enveloped-signature",
+                                                                            "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "examples": [{
+                                                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                                                },
+                                                                {
+                                                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                                }]
+                                                            },
+                                                            "examples": [
+                                                                [{
+                                                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                                                },
+                                                                {
+                                                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                                }]
+                                                            ]
+                                                        }
+                                                    },
+                                                    "examples": [{
+                                                        "Transform": [{
+                                                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                                        },
+                                                        {
+                                                            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                        }]
+                                                    }]
+                                                },
+                                                "DigestMethod": {
+                                                    "title": "The DigestMethod Schema",
+                                                    "type": "object",
+                                                    "default": {},
+                                                    "required": [
+                                                        "@Algorithm"
+                                                    ],
+                                                    "properties": {
+                                                        "@Algorithm": {
+                                                            "title": "The @Algorithm Schema",
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "http://www.w3.org/2000/09/xmldsig#sha1"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "examples": [{
+                                                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                                    }]
+                                                },
+                                                "DigestValue": {
+                                                    "title": "The DigestValue Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "@URI": "#NFe43121143708379008348550010000175461000000014",
+                                                "Transforms": {
+                                                    "Transform": [{
+                                                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                                    },
+                                                    {
+                                                        "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                    }]
+                                                },
+                                                "DigestMethod": {
+                                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                                },
+                                                "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "CanonicalizationMethod": {
+                                            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                        },
+                                        "SignatureMethod": {
+                                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                                        },
+                                        "Reference": {
+                                            "@URI": "#NFe43121143708379008348550010000175461000000014",
+                                            "Transforms": {
+                                                "Transform": [{
+                                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                                },
+                                                {
+                                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                                }]
+                                            },
+                                            "DigestMethod": {
+                                                "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                            },
+                                            "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                        }
+                                    }]
+                                },
+                                "SignatureValue": {
+                                    "title": "The SignatureValue Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ=="
+                                    ]
+                                },
+                                "KeyInfo": {
+                                    "title": "The KeyInfo Schema",
+                                    "type": "object",
+                                    "default": {},
+                                    "required": [
+                                        "X509Data"
+                                    ],
+                                    "properties": {
+                                        "X509Data": {
+                                            "title": "The X509Data Schema",
+                                            "type": "object",
+                                            "default": {},
+                                            "required": [
+                                                "X509Certificate"
+                                            ],
+                                            "properties": {
+                                                "X509Certificate": {
+                                                    "title": "The X509Certificate Schema",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "X509Data": {
+                                            "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                                        }
+                                    }]
+                                }
+                            },
+                            "examples": [{
+                                "SignedInfo": {
+                                    "CanonicalizationMethod": {
+                                        "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                    },
+                                    "SignatureMethod": {
+                                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                                    },
+                                    "Reference": {
+                                        "@URI": "#NFe43121143708379008348550010000175461000000014",
+                                        "Transforms": {
+                                            "Transform": [{
+                                                "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                            },
+                                            {
+                                                "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                            }]
+                                        },
+                                        "DigestMethod": {
+                                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                        },
+                                        "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                    }
+                                },
+                                "SignatureValue": "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ==",
+                                "KeyInfo": {
+                                    "X509Data": {
+                                        "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                                    }
+                                }
+                            }]
+                        }
+                    },
+                    "examples": [{
+                        "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                        "infNFe": {
+                            "@Id": "NFe43121143708379008348550010000175461000000014",
+                            "@versao": "2.00",
+                            "ide": {
+                                "cUF": "43",
+                                "cNF": "00000001",
+                                "natOp": "REMESSA VINCUL.ECF VN",
+                                "indPag": "0",
+                                "mod": "55",
+                                "serie": "1",
+                                "nNF": "17546",
+                                "dEmi": "2012-11-23",
+                                "tpNF": "1",
+                                "cMunFG": "4314902",
+                                "tpImp": "2",
+                                "tpEmis": "1",
+                                "cDV": "4",
+                                "tpAmb": "1",
+                                "finNFe": "1",
+                                "procEmi": "0",
+                                "verProc": "NeoGrid NFe 1.9.0.1"
+                            },
+                            "emit": {
+                                "CNPJ": "43708379008348",
+                                "xNome": "FAST SHOP S.A.",
+                                "xFant": "FAST SHOP S.A.",
+                                "enderEmit": {
+                                    "xLgr": "JOAO WALLIG",
+                                    "nro": "1800",
+                                    "xCpl": "210 PISO NP",
+                                    "xBairro": "PASSO D.AREIA",
+                                    "cMun": "4314902",
+                                    "xMun": "PORTO ALEGRE",
+                                    "UF": "RS",
+                                    "CEP": "91349900",
+                                    "cPais": "1058",
+                                    "xPais": "Brasil",
+                                    "fone": "1132323200"
+                                },
+                                "IE": "0963395009",
+                                "CRT": "3"
+                            },
+                            "dest": {
+                                "CPF": "12345678900",
+                                "xNome": "GIOVANI LIBRELOTTO",
+                                "enderDest": {
+                                    "xLgr": "AV RORAIMA",
+                                    "nro": "1000",
+                                    "xCpl": "SALA 387",
+                                    "xBairro": "CAMOBI",
+                                    "cMun": "4316907",
+                                    "xMun": "SANTA MARIA",
+                                    "UF": "RS",
+                                    "CEP": "97010041",
+                                    "cPais": "1058",
+                                    "xPais": "Brasil",
+                                    "fone": "5591234567"
+                                },
+                                "IE": "ISENTO",
+                                "email": "librelotto@mail.com"
+                            },
+                            "entrega": {
+                                "CPF": "12345678900",
+                                "xLgr": "AV RORAIMA",
+                                "nro": "1000",
+                                "xCpl": "SALA 387",
+                                "xBairro": "CAMOBI",
+                                "cMun": "4316907",
+                                "xMun": "SANTA MARIA",
+                                "UF": "RS"
+                            },
+                            "det": {
+                                "@nItem": "1",
+                                "prod": {
+                                    "cProd": "AEMD387BZA",
+                                    "cEAN": "0885909545759",
+                                    "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                                    "NCM": "84715010",
+                                    "CFOP": "5929",
+                                    "uCom": "PC",
+                                    "qCom": "1.0000",
+                                    "vUnCom": "2269.0000",
+                                    "vProd": "2269.00",
+                                    "cEANTrib": "0885909545759",
+                                    "uTrib": "PC",
+                                    "qTrib": "1.0000",
+                                    "vUnTrib": "2269.0000",
+                                    "indTot": "1"
+                                },
+                                "imposto": {
+                                    "ICMS": {
+                                        "ICMS60": {
+                                            "orig": "2",
+                                            "CST": "60",
+                                            "vBCSTRet": "2229.90",
+                                            "vICMSSTRet": "76.91"
+                                        }
+                                    },
+                                    "PIS": {
+                                        "PISNT": {
+                                            "CST": "08"
+                                        }
+                                    },
+                                    "COFINS": {
+                                        "COFINSNT": {
+                                            "CST": "08"
+                                        }
+                                    }
+                                }
+                            },
+                            "total": {
+                                "ICMSTot": {
+                                    "vBC": "0.00",
+                                    "vICMS": "0.00",
+                                    "vBCST": "0.00",
+                                    "vST": "0.00",
+                                    "vProd": "2269.00",
+                                    "vFrete": "0.00",
+                                    "vSeg": "0.00",
+                                    "vDesc": "0.00",
+                                    "vII": "0.00",
+                                    "vIPI": "0.00",
+                                    "vPIS": "0.00",
+                                    "vCOFINS": "0.00",
+                                    "vOutro": "0.00",
+                                    "vNF": "2269.00"
+                                }
+                            },
+                            "transp": {
+                                "modFrete": "9",
+                                "vol": {
+                                    "qVol": "1",
+                                    "esp": "volume",
+                                    "pesoL": "2.500",
+                                    "pesoB": "2.500"
+                                }
+                            },
+                            "infAdic": {
+                                "infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                            }
+                        },
+                        "Signature": {
+                            "SignedInfo": {
+                                "CanonicalizationMethod": {
+                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                },
+                                "SignatureMethod": {
+                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                                },
+                                "Reference": {
+                                    "@URI": "#NFe43121143708379008348550010000175461000000014",
+                                    "Transforms": {
+                                        "Transform": [{
+                                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                        },
+                                        {
+                                            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                        }]
+                                    },
+                                    "DigestMethod": {
+                                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                    },
+                                    "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                }
+                            },
+                            "SignatureValue": "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ==",
+                            "KeyInfo": {
+                                "X509Data": {
+                                    "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                                }
+                            }
+                        }
+                    }]
+                },
+                "protNFe": {
+                    "title": "The protNFe Schema",
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "@versao",
+                        "@xmlns",
+                        "infProt"
+                    ],
+                    "properties": {
+                        "@versao": {
+                            "title": "The @versao Schema",
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "2.00"
+                            ]
+                        },
+                        "@xmlns": {
+                            "title": "The @xmlns Schema",
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "http://www.portalfiscal.inf.br/nfe"
+                            ]
+                        },
+                        "infProt": {
+                            "title": "The infProt Schema",
+                            "type": "object",
+                            "default": {},
+                            "required": [
+                                "tpAmb",
+                                "verAplic",
+                                "chNFe",
+                                "dhRecbto",
+                                "nProt",
+                                "digVal",
+                                "cStat",
+                                "xMotivo"
+                            ],
+                            "properties": {
+                                "tpAmb": {
+                                    "title": "The tpAmb Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "1"
+                                    ]
+                                },
+                                "verAplic": {
+                                    "title": "The verAplic Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "5.0"
+                                    ]
+                                },
+                                "chNFe": {
+                                    "title": "The chNFe Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "43121143708379008348550010000175461000000014"
+                                    ]
+                                },
+                                "dhRecbto": {
+                                    "title": "The dhRecbto Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "2012-11-23T21:17:25"
+                                    ]
+                                },
+                                "nProt": {
+                                    "title": "The nProt Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "143120163710583"
+                                    ]
+                                },
+                                "digVal": {
+                                    "title": "The digVal Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                                    ]
+                                },
+                                "cStat": {
+                                    "title": "The cStat Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "100"
+                                    ]
+                                },
+                                "xMotivo": {
+                                    "title": "The xMotivo Schema",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                        "Autorizado o uso da NF-e"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "tpAmb": "1",
+                                "verAplic": "5.0",
+                                "chNFe": "43121143708379008348550010000175461000000014",
+                                "dhRecbto": "2012-11-23T21:17:25",
+                                "nProt": "143120163710583",
+                                "digVal": "Xyu770KQBvE55c4b4/EfVWzAoNg=",
+                                "cStat": "100",
+                                "xMotivo": "Autorizado o uso da NF-e"
+                            }]
+                        }
+                    },
+                    "examples": [{
+                        "@versao": "2.00",
+                        "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                        "infProt": {
+                            "tpAmb": "1",
+                            "verAplic": "5.0",
+                            "chNFe": "43121143708379008348550010000175461000000014",
+                            "dhRecbto": "2012-11-23T21:17:25",
+                            "nProt": "143120163710583",
+                            "digVal": "Xyu770KQBvE55c4b4/EfVWzAoNg=",
+                            "cStat": "100",
+                            "xMotivo": "Autorizado o uso da NF-e"
+                        }
+                    }]
+                }
+            },
+            "examples": [{
+                "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                "@versao": "2.00",
+                "NFe": {
+                    "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                    "infNFe": {
+                        "@Id": "NFe43121143708379008348550010000175461000000014",
+                        "@versao": "2.00",
+                        "ide": {
+                            "cUF": "43",
+                            "cNF": "00000001",
+                            "natOp": "REMESSA VINCUL.ECF VN",
+                            "indPag": "0",
+                            "mod": "55",
+                            "serie": "1",
+                            "nNF": "17546",
+                            "dEmi": "2012-11-23",
+                            "tpNF": "1",
+                            "cMunFG": "4314902",
+                            "tpImp": "2",
+                            "tpEmis": "1",
+                            "cDV": "4",
+                            "tpAmb": "1",
+                            "finNFe": "1",
+                            "procEmi": "0",
+                            "verProc": "NeoGrid NFe 1.9.0.1"
+                        },
+                        "emit": {
+                            "CNPJ": "43708379008348",
+                            "xNome": "FAST SHOP S.A.",
+                            "xFant": "FAST SHOP S.A.",
+                            "enderEmit": {
+                                "xLgr": "JOAO WALLIG",
+                                "nro": "1800",
+                                "xCpl": "210 PISO NP",
+                                "xBairro": "PASSO D.AREIA",
+                                "cMun": "4314902",
+                                "xMun": "PORTO ALEGRE",
+                                "UF": "RS",
+                                "CEP": "91349900",
+                                "cPais": "1058",
+                                "xPais": "Brasil",
+                                "fone": "1132323200"
+                            },
+                            "IE": "0963395009",
+                            "CRT": "3"
+                        },
+                        "dest": {
+                            "CPF": "12345678900",
+                            "xNome": "GIOVANI LIBRELOTTO",
+                            "enderDest": {
+                                "xLgr": "AV RORAIMA",
+                                "nro": "1000",
+                                "xCpl": "SALA 387",
+                                "xBairro": "CAMOBI",
+                                "cMun": "4316907",
+                                "xMun": "SANTA MARIA",
+                                "UF": "RS",
+                                "CEP": "97010041",
+                                "cPais": "1058",
+                                "xPais": "Brasil",
+                                "fone": "5591234567"
+                            },
+                            "IE": "ISENTO",
+                            "email": "librelotto@mail.com"
+                        },
+                        "entrega": {
+                            "CPF": "12345678900",
+                            "xLgr": "AV RORAIMA",
+                            "nro": "1000",
+                            "xCpl": "SALA 387",
+                            "xBairro": "CAMOBI",
+                            "cMun": "4316907",
+                            "xMun": "SANTA MARIA",
+                            "UF": "RS"
+                        },
+                        "det": {
+                            "@nItem": "1",
+                            "prod": {
+                                "cProd": "AEMD387BZA",
+                                "cEAN": "0885909545759",
+                                "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                                "NCM": "84715010",
+                                "CFOP": "5929",
+                                "uCom": "PC",
+                                "qCom": "1.0000",
+                                "vUnCom": "2269.0000",
+                                "vProd": "2269.00",
+                                "cEANTrib": "0885909545759",
+                                "uTrib": "PC",
+                                "qTrib": "1.0000",
+                                "vUnTrib": "2269.0000",
+                                "indTot": "1"
+                            },
+                            "imposto": {
+                                "ICMS": {
+                                    "ICMS60": {
+                                        "orig": "2",
+                                        "CST": "60",
+                                        "vBCSTRet": "2229.90",
+                                        "vICMSSTRet": "76.91"
+                                    }
+                                },
+                                "PIS": {
+                                    "PISNT": {
+                                        "CST": "08"
+                                    }
+                                },
+                                "COFINS": {
+                                    "COFINSNT": {
+                                        "CST": "08"
+                                    }
+                                }
+                            }
+                        },
+                        "total": {
+                            "ICMSTot": {
+                                "vBC": "0.00",
+                                "vICMS": "0.00",
+                                "vBCST": "0.00",
+                                "vST": "0.00",
+                                "vProd": "2269.00",
+                                "vFrete": "0.00",
+                                "vSeg": "0.00",
+                                "vDesc": "0.00",
+                                "vII": "0.00",
+                                "vIPI": "0.00",
+                                "vPIS": "0.00",
+                                "vCOFINS": "0.00",
+                                "vOutro": "0.00",
+                                "vNF": "2269.00"
+                            }
+                        },
+                        "transp": {
+                            "modFrete": "9",
+                            "vol": {
+                                "qVol": "1",
+                                "esp": "volume",
+                                "pesoL": "2.500",
+                                "pesoB": "2.500"
+                            }
+                        },
+                        "infAdic": {
+                            "infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                        }
+                    },
+                    "Signature": {
+                        "SignedInfo": {
+                            "CanonicalizationMethod": {
+                                "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                            },
+                            "SignatureMethod": {
+                                "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                            },
+                            "Reference": {
+                                "@URI": "#NFe43121143708379008348550010000175461000000014",
+                                "Transforms": {
+                                    "Transform": [{
+                                        "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                    },
+                                    {
+                                        "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                    }]
+                                },
+                                "DigestMethod": {
+                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                                },
+                                "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                            }
+                        },
+                        "SignatureValue": "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ==",
+                        "KeyInfo": {
+                            "X509Data": {
+                                "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                            }
+                        }
+                    }
+                },
+                "protNFe": {
+                    "@versao": "2.00",
+                    "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                    "infProt": {
+                        "tpAmb": "1",
+                        "verAplic": "5.0",
+                        "chNFe": "43121143708379008348550010000175461000000014",
+                        "dhRecbto": "2012-11-23T21:17:25",
+                        "nProt": "143120163710583",
+                        "digVal": "Xyu770KQBvE55c4b4/EfVWzAoNg=",
+                        "cStat": "100",
+                        "xMotivo": "Autorizado o uso da NF-e"
+                    }
+                }
+            }]
+        }
+    },
+    "examples": [{
+        "nfeProc": {
+            "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+            "@versao": "2.00",
+            "NFe": {
+                "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                "infNFe": {
+                    "@Id": "NFe43121143708379008348550010000175461000000014",
+                    "@versao": "2.00",
+                    "ide": {
+                        "cUF": "43",
+                        "cNF": "00000001",
+                        "natOp": "REMESSA VINCUL.ECF VN",
+                        "indPag": "0",
+                        "mod": "55",
+                        "serie": "1",
+                        "nNF": "17546",
+                        "dEmi": "2012-11-23",
+                        "tpNF": "1",
+                        "cMunFG": "4314902",
+                        "tpImp": "2",
+                        "tpEmis": "1",
+                        "cDV": "4",
+                        "tpAmb": "1",
+                        "finNFe": "1",
+                        "procEmi": "0",
+                        "verProc": "NeoGrid NFe 1.9.0.1"
+                    },
+                    "emit": {
+                        "CNPJ": "43708379008348",
+                        "xNome": "FAST SHOP S.A.",
+                        "xFant": "FAST SHOP S.A.",
+                        "enderEmit": {
+                            "xLgr": "JOAO WALLIG",
+                            "nro": "1800",
+                            "xCpl": "210 PISO NP",
+                            "xBairro": "PASSO D.AREIA",
+                            "cMun": "4314902",
+                            "xMun": "PORTO ALEGRE",
+                            "UF": "RS",
+                            "CEP": "91349900",
+                            "cPais": "1058",
+                            "xPais": "Brasil",
+                            "fone": "1132323200"
+                        },
+                        "IE": "0963395009",
+                        "CRT": "3"
+                    },
+                    "dest": {
+                        "CPF": "12345678900",
+                        "xNome": "GIOVANI LIBRELOTTO",
+                        "enderDest": {
+                            "xLgr": "AV RORAIMA",
+                            "nro": "1000",
+                            "xCpl": "SALA 387",
+                            "xBairro": "CAMOBI",
+                            "cMun": "4316907",
+                            "xMun": "SANTA MARIA",
+                            "UF": "RS",
+                            "CEP": "97010041",
+                            "cPais": "1058",
+                            "xPais": "Brasil",
+                            "fone": "5591234567"
+                        },
+                        "IE": "ISENTO",
+                        "email": "librelotto@mail.com"
+                    },
+                    "entrega": {
+                        "CPF": "12345678900",
+                        "xLgr": "AV RORAIMA",
+                        "nro": "1000",
+                        "xCpl": "SALA 387",
+                        "xBairro": "CAMOBI",
+                        "cMun": "4316907",
+                        "xMun": "SANTA MARIA",
+                        "UF": "RS"
+                    },
+                    "det": {
+                        "@nItem": "1",
+                        "prod": {
+                            "cProd": "AEMD387BZA",
+                            "cEAN": "0885909545759",
+                            "xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+                            "NCM": "84715010",
+                            "CFOP": "5929",
+                            "uCom": "PC",
+                            "qCom": "1.0000",
+                            "vUnCom": "2269.0000",
+                            "vProd": "2269.00",
+                            "cEANTrib": "0885909545759",
+                            "uTrib": "PC",
+                            "qTrib": "1.0000",
+                            "vUnTrib": "2269.0000",
+                            "indTot": "1"
+                        },
+                        "imposto": {
+                            "ICMS": {
+                                "ICMS60": {
+                                    "orig": "2",
+                                    "CST": "60",
+                                    "vBCSTRet": "2229.90",
+                                    "vICMSSTRet": "76.91"
+                                }
+                            },
+                            "PIS": {
+                                "PISNT": {
+                                    "CST": "08"
+                                }
+                            },
+                            "COFINS": {
+                                "COFINSNT": {
+                                    "CST": "08"
+                                }
+                            }
+                        }
+                    },
+                    "total": {
+                        "ICMSTot": {
+                            "vBC": "0.00",
+                            "vICMS": "0.00",
+                            "vBCST": "0.00",
+                            "vST": "0.00",
+                            "vProd": "2269.00",
+                            "vFrete": "0.00",
+                            "vSeg": "0.00",
+                            "vDesc": "0.00",
+                            "vII": "0.00",
+                            "vIPI": "0.00",
+                            "vPIS": "0.00",
+                            "vCOFINS": "0.00",
+                            "vOutro": "0.00",
+                            "vNF": "2269.00"
+                        }
+                    },
+                    "transp": {
+                        "modFrete": "9",
+                        "vol": {
+                            "qVol": "1",
+                            "esp": "volume",
+                            "pesoL": "2.500",
+                            "pesoB": "2.500"
+                        }
+                    },
+                    "infAdic": {
+                        "infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+                    }
+                },
+                "Signature": {
+                    "SignedInfo": {
+                        "CanonicalizationMethod": {
+                            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                        },
+                        "SignatureMethod": {
+                            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+                        },
+                        "Reference": {
+                            "@URI": "#NFe43121143708379008348550010000175461000000014",
+                            "Transforms": {
+                                "Transform": [{
+                                    "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                                },
+                                {
+                                    "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                                }]
+                            },
+                            "DigestMethod": {
+                                "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+                            },
+                            "DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+                        }
+                    },
+                    "SignatureValue": "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ==",
+                    "KeyInfo": {
+                        "X509Data": {
+                            "X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+                        }
+                    }
+                }
+            },
+            "protNFe": {
+                "@versao": "2.00",
+                "@xmlns": "http://www.portalfiscal.inf.br/nfe",
+                "infProt": {
+                    "tpAmb": "1",
+                    "verAplic": "5.0",
+                    "chNFe": "43121143708379008348550010000175461000000014",
+                    "dhRecbto": "2012-11-23T21:17:25",
+                    "nProt": "143120163710583",
+                    "digVal": "Xyu770KQBvE55c4b4/EfVWzAoNg=",
+                    "cStat": "100",
+                    "xMotivo": "Autorizado o uso da NF-e"
+                }
+            }
+        }
+    }]
+}

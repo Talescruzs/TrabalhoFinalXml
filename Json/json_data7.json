@@ -1,0 +1,195 @@
+{
+  "ns0:nfeProc": {
+    "@xmlns:ns0": "http://www.portalfiscal.inf.br/nfe",
+    "@versao": "2.00",
+    "ns0:NFe": {
+      "ns0:infNFe": {
+        "@Id": "NFe43121143708379008348550010000175461000000014",
+        "@versao": "2.00",
+        "ns0:ide": {
+          "ns0:cUF": "43",
+          "ns0:cNF": "00000001",
+          "ns0:natOp": "REMESSA VINCUL.ECF VN",
+          "ns0:indPag": "0",
+          "ns0:mod": "55",
+          "ns0:serie": "1",
+          "ns0:nNF": "17546",
+          "ns0:dEmi": "2012-11-23",
+          "ns0:tpNF": "1",
+          "ns0:cMunFG": "4314902",
+          "ns0:tpImp": "2",
+          "ns0:tpEmis": "1",
+          "ns0:cDV": "4",
+          "ns0:tpAmb": "1",
+          "ns0:finNFe": "1",
+          "ns0:procEmi": "0",
+          "ns0:verProc": "NeoGrid NFe 1.9.0.1"
+        },
+        "ns0:emit": {
+          "ns0:CNPJ": "43708379008348",
+          "ns0:xNome": "FAST SHOP S.A.",
+          "ns0:xFant": "FAST SHOP S.A.",
+          "ns0:enderEmit": {
+            "ns0:xLgr": "JOAO WALLIG",
+            "ns0:nro": "1800",
+            "ns0:xCpl": "210 PISO NP",
+            "ns0:xBairro": "PASSO D.AREIA",
+            "ns0:cMun": "4314902",
+            "ns0:xMun": "PORTO ALEGRE",
+            "ns0:UF": "RS",
+            "ns0:CEP": "91349900",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "Brasil",
+            "ns0:fone": "1132323200"
+          },
+          "ns0:IE": "0963395009",
+          "ns0:CRT": "3"
+        },
+        "ns0:dest": {
+          "ns0:CPF": "12345678900",
+          "ns0:xNome": "GIOVANI LIBRELOTTO",
+          "ns0:enderDest": {
+            "ns0:xLgr": "AV RORAIMA",
+            "ns0:nro": "1000",
+            "ns0:xCpl": "SALA 387",
+            "ns0:xBairro": "CAMOBI",
+            "ns0:cMun": "4316907",
+            "ns0:xMun": "SANTA MARIA",
+            "ns0:UF": "RS",
+            "ns0:CEP": "97010041",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "Brasil",
+            "ns0:fone": "5591234567"
+          },
+          "ns0:IE": "ISENTO",
+          "ns0:email": "librelotto@mail.com"
+        },
+        "ns0:entrega": {
+          "ns0:CPF": "12345678900",
+          "ns0:xLgr": "AV RORAIMA",
+          "ns0:nro": "1000",
+          "ns0:xCpl": "SALA 387",
+          "ns0:xBairro": "CAMOBI",
+          "ns0:cMun": "4316907",
+          "ns0:xMun": "SANTA MARIA",
+          "ns0:UF": "RS"
+        },
+        "ns0:det": {
+          "@nItem": "1",
+          "ns0:prod": {
+            "ns0:cProd": "AEMD387BZA",
+            "ns0:cEAN": "0885909545759",
+            "ns0:xProd": "MAC MINI COREI5 4GB500 | 0885909545759| Rua: A",
+            "ns0:NCM": "84715010",
+            "ns0:CFOP": "5929",
+            "ns0:uCom": "PC",
+            "ns0:qCom": "1.0000",
+            "ns0:vUnCom": "2269.0000",
+            "ns0:vProd": "2269.00",
+            "ns0:cEANTrib": "0885909545759",
+            "ns0:uTrib": "PC",
+            "ns0:qTrib": "1.0000",
+            "ns0:vUnTrib": "2269.0000",
+            "ns0:indTot": "1"
+          },
+          "ns0:imposto": {
+            "ns0:ICMS": {
+              "ns0:ICMS60": {
+                "ns0:orig": "2",
+                "ns0:CST": "60",
+                "ns0:vBCSTRet": "2229.90",
+                "ns0:vICMSSTRet": "76.91"
+              }
+            },
+            "ns0:PIS": {
+              "ns0:PISNT": {
+                "ns0:CST": "08"
+              }
+            },
+            "ns0:COFINS": {
+              "ns0:COFINSNT": {
+                "ns0:CST": "08"
+              }
+            }
+          }
+        },
+        "ns0:total": {
+          "ns0:ICMSTot": {
+            "ns0:vBC": "0.00",
+            "ns0:vICMS": "0.00",
+            "ns0:vBCST": "0.00",
+            "ns0:vST": "0.00",
+            "ns0:vProd": "2269.00",
+            "ns0:vFrete": "0.00",
+            "ns0:vSeg": "0.00",
+            "ns0:vDesc": "0.00",
+            "ns0:vII": "0.00",
+            "ns0:vIPI": "0.00",
+            "ns0:vPIS": "0.00",
+            "ns0:vCOFINS": "0.00",
+            "ns0:vOutro": "0.00",
+            "ns0:vNF": "2269.00"
+          }
+        },
+        "ns0:transp": {
+          "ns0:modFrete": "9",
+          "ns0:vol": {
+            "ns0:qVol": "1",
+            "ns0:esp": "volume",
+            "ns0:pesoL": "2.500",
+            "ns0:pesoB": "2.500"
+          }
+        },
+        "ns0:infAdic": {
+          "ns0:infCpl": "Pedido: 35869 Tabela: F8 Vendedor: V104335 Usuario: PATRICED Expedicao:\n                    RETIRA PELO CLIENTE Nota Fiscal emitida com base no Cupom fiscal de numero\n                    006611 Impressora: C3 Substituicao Trib.ICMS item 1 cf. RICMS APENDICE II ITEM\n                    XXXV LETRA ADObs: G: 00 End.Cobranca: R VENANCIO AIRES, 983 1500, - CENTRO CRUZ\n                    ALTA - RS C G: 000 00 Em ate 7 dias apos a entrega, se o produto apresentar\n                    defeito, a troca podera ser efetuada diretamente em qualquer das lojas da FAST\n                    SHOP no mesmo Estado de emissao do d ocumento fiscal, desde que ausentes avarias\n                    ou danos aparentes, sem laudo tecnico ou procedimento de garantia previsto nos\n                    artigos 18 a 26 do Codigo de Defesa do Consumidor. A troca se dara mediante\n                    apresentacao da nota fiscal, embalagem original e acessorios. Essa troca em 7\n                    dias, nas lojas, e sem maiores formalidades, e um especial beneficio aos nossos\n                    clientes, independentemente dos termos e prazos das garantias legal e/ou\n                    contratual previstas para o produto/servico (artigos 18 a 26 da lei\n                    8.078/90)."
+        }
+      },
+      "ns0:Signature": {
+        "ns0:SignedInfo": {
+          "ns0:CanonicalizationMethod": {
+            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+          },
+          "ns0:SignatureMethod": {
+            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+          },
+          "ns0:Reference": {
+            "@URI": "#NFe43121143708379008348550010000175461000000014",
+            "ns0:Transforms": {
+              "ns0:Transform": [
+                {
+                  "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                },
+                {
+                  "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                }
+              ]
+            },
+            "ns0:DigestMethod": {
+              "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+            },
+            "ns0:DigestValue": "Xyu770KQBvE55c4b4/EfVWzAoNg="
+          }
+        },
+        "ns0:SignatureValue": "Qk9zJBu6Mi6DEXMCJpwjeraky8f021Erj/hjhEbqXPVmWOMP7IuuF4GKKZtGHPgoN4IlUuCDgC4gikxB/G+rANojjew1KClqSUl8wehTsZvTSRXkLDSUYXpJY1LKKjeylaeX584NwI7o8aBfO5itgPmtsy+Pe19OFzlOZC/YF+zBgy/KqPQDd8QSYvZglveHY2qFilh/nbMzKorDG8iN23zF5nugiVaUVNQw4TGY8iq+RsahjVvyM9uiu1VeJ89Vu7CGBGuwomkkSLdeKxFT93gz2tPv+GmTFQwAdumWcq9YdjC4V9Plx6yULCqAlY/4okljW9atjAz3MW/2uu4RCQ==",
+        "ns0:KeyInfo": {
+          "ns0:X509Data": {
+            "ns0:X509Certificate": "MIIIQjCCBiqgAwIBAgIQDm0R6qTsIXspQjoXR5Z33TANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwODI4MDAwMDAwWhcNMTMwODI3MjM1OTU5WjCB0DELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU0NDQwMzEWMBQGA1UEAxMNRmFzdCBTaG9wIFMgQTEmMCQGCSqGSIb3DQEJARYXaW5mcmF0aUBmYXN0c2hvcC5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8DuxgkTaOwF4ibXU2Z43Po6bYOfeLwWQxlrv8wNnwgCtXYw8EdIIda+JB3sPhA8QH1ld9XFCw4r+UC1EBppNJVRdAcn9LNUxC6zzka7CLPtDRXw12a+dh2AhSehMGGOs9mTTMo4z3osAheckv4Z1N3doEJgHy9YbJyV52+546KGs3/SjwEelxP04Rb3qtADqXdfRL6R+v6v/DfePWjH/5RQdi8JVJZKhf6qGWfYGLBfjutZc7JSr1CUEiffTNXptrTGkZmvkMJ809LQGvGSIrJ4CpJGmf1DWn0P46Npd90NkTBVvC+c5jZZ9jTLtXBXMb6Yp1Ry9WvzXotumq8f/xAgMBAAGjggNxMIIDbTCBtwYDVR0RBIGvMIGsoDgGBWBMAQMEoC8ELTAyMDMxOTU2MDAxNzk5MjM4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAjBgVgTAEDAqAaBBhNSUxUT04gS0FaVVlVS0kgS0FLVU1PVE+gGQYFYEwBAwOgEAQONDM3MDgzNzkwMDAxMDCgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRdpbmZyYXRpQGZhc3RzaG9wLmNvbS5icjAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFJ1Qz73/JMqvsTPrF+JCeo5pKo5TMA4GA1UdDwEB/wQEAwIF4DCBiQYDVR0gBIGBMH8wfQYGYEwBAgELMHMwcQYIKwYBBQUHAgEWZWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9NdWx0aXBsYS9EUENfQUNfQ2VydGlTaWduTXVsdGlwbGEucGRmMIIBJQYDVR0fBIIBHDCCARgwXKBaoFiGVmh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMFugWaBXhlVodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQ2VydGlzaWduL0FDQ2VydGlzaWduTXVsdGlwbGFHNS9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBoAYIKwYBBQUHAQEEgZMwgZAwZAYIKwYBBQUHMAKGWGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9NdWx0aXBsYV9HNS5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2lnbi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBACl4Y5pqf5tvgXmcWYuWVMB5CnF8QUzYTMzIr6OcHJthybSjHCwNvKTY1jSeq2rqW/SuagkjuwTNrIGcY+4QYhb+gkc4z0dEtPcwCcrBSOSwYQ0cl5Q07+VD3crCUpoP14wKHJpzE3CW5n2MrK9rz326LD0UaVGV3yUChi5FjvyKW0/FqDmmRacbR1Z0RsZ5/upln8jDmC7lJv4QQh3mFQCzivLlrSuTztPRocwPpGi7a5edCgKhxiYddLPPPuuE70PtFYlSXOCc12GjXuD5cDEsA+kGDXpB2sG4Q1r/KFcnwMz1KdvY70+WaiJ4ygvSRkj+XA72EjPj1bhBwybOG4Fu/uGWOTslpf2p88UjH4Bk4XnFtU/EaP51DEeoW+R84DaTd13Doi5Ba+SN1X27wFG34RfMUEc8GqIamZdAuRgg8wbrhcU2cpEi80paqCWTvIGf9jEt8rWZHgl/gFf+e1Rv4iLnJliVZquSUr/hI324F7Q2tYpQqmhAbZvMn4gTP00FVF2aMQgYtJEJNjH2NkV4ZONCXs7z+7YI9FfHc11KLu/N0KybzfIHSeiS/SUfkqi3yvHW2Oo+VLrX/vbO+c+5BT3IHoWQimeN7LJzi5pkpXVXHFZcEinpECTFH30rL7HY3ndUTHGg/ktHlXUuNoE1jM/y5Wi9X3nOHkRoUKL6"
+          }
+        }
+      }
+    },
+    "ns0:protNFe": {
+      "@versao": "2.00",
+      "ns0:infProt": {
+        "ns0:tpAmb": "1",
+        "ns0:verAplic": "5.0",
+        "ns0:chNFe": "43121143708379008348550010000175461000000014",
+        "ns0:dhRecbto": "2012-11-23T21:17:25",
+        "ns0:nProt": "143120163710583",
+        "ns0:digVal": "Xyu770KQBvE55c4b4/EfVWzAoNg=",
+        "ns0:cStat": "100",
+        "ns0:xMotivo": "Autorizado o uso da NF-e"
+      }
+    }
+  }
+}
