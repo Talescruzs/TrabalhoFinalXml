@@ -3,26 +3,27 @@ import xmltodict, json
 import os
 from jsonschema import Draft7Validator
 
-class Json:
-    def __init__(self, xmlFolderPath:str, jsonSchemaPath:str):
-        self.__defFiles(xmlFolderPath)
+class Files:
+    def __init__(self, xmlFolderPath:str, jsonFolderPath:str):
+        self.xmlFiles = self.__getLocalFiles(xmlFolderPath)
+        self.xmlFolder = xmlFolderPath
+        self.jsonFolder = jsonFolderPath
 
-        for file in range(len(self.res)):
-            self.__defJson(xmlFolderPath, self.res[file], file)
-            # self.validate(jsonSchemaPath)
+        for file in range(len(self.xmlFiles)):
+            self.__createJson(self.xmlFiles[file], file)
 
-    def __defFiles(self, xmlFolderPath:str):
-        dir_path = xmlFolderPath
+        self.jsonFiles = self.__getLocalFiles(self.jsonFolder)
 
-        self.res = []
+    def __getLocalFiles(self, folderPath:str):
+        res = list()
+        for file_path in os.listdir(folderPath):
+            if os.path.isfile(os.path.join(folderPath, file_path)):
+                res.append(file_path)
+        return res
 
-        for file_path in os.listdir(dir_path):
-            if os.path.isfile(os.path.join(dir_path, file_path)):
-                self.res.append(file_path)
-
-    def __defJson(self, xmlFolderPath:str, file:str, index:int):
-
-        xml_tree = ET.parse(xmlFolderPath+file)
+    def __createJson(self, file:str, index:int):
+        xmlFile = self.xmlFolder+file
+        xml_tree = ET.parse(xmlFile)
         root = xml_tree.getroot()
         to_string  = ET.tostring(root, encoding='UTF-8', method='xml')
         xml_to_dict = xmltodict.parse(to_string)
@@ -30,17 +31,37 @@ class Json:
         with open("Json/json_data{0}.json".format(index+1), "w",) as json_file:
             json.dump(xml_to_dict, json_file, indent = 2)
 
-        print(root)
-        # self.jsonFile = json.dumps(obj)
-        # print(self.jsonFile+"\n\n\n\n")
-        
+class Validator:
+    def __init__(self, files:Files, jsonSchemaPath:str):
+        self.validJson = list()
+        self.invalidJson = list()
+        self.files=files
 
-    def validate(self, jsonSchemaPath):
         with open(jsonSchemaPath, 'r') as file:
-            schema = json.load(file)
-        validator = Draft7Validator(schema)
-        print(list(validator.iter_errors(self.jsonFile)))
+                self.schema = json.load(file)
 
+        self.__validate()
+
+    def __validate(self):
+        print(self.files.xmlFiles)
+        print(self.files.jsonFiles)
+        print(self.files.xmlFolder)
+        print(self.files.jsonFolder)
+        for currentFile in self.files.jsonFiles:
+            with open(self.files.jsonFolder+currentFile, 'r') as file:
+                thisJson = json.load(file)
+            
+            validator = Draft7Validator(self.schema)
+
+            # print(list(validator.iter_errors(thisJson)))
+            
+            if(len(list(validator.iter_errors(thisJson)))==0):
+                self.validJson.append(currentFile)
+            else:
+                self.invalidJson.append(currentFile)
+        print(self.invalidJson)
+        print(self.validJson)
 
 if __name__ == "__main__":
-    teste = Json("notasFiscais/", "schema.json")
+    teste1 = Files("notasFiscais/", "Json/")
+    teste2 = Validator(teste1, "schema.json")
