@@ -28,7 +28,7 @@ class Files:
         to_string  = ET.tostring(root, encoding='UTF-8', method='xml')
         xml_to_dict = xmltodict.parse(to_string)
 
-        with open("Json/json_data{0}.json".format(index+1), "w",) as json_file:
+        with open("Json/{0}.json".format(file.split(".")[0]), "w",) as json_file:
             json.dump(xml_to_dict, json_file, indent = 2)
 
 class Validator:
@@ -52,8 +52,9 @@ class Validator:
                 thisJson = json.load(file)
             
             validator = Draft7Validator(self.schema)
-
-            # print(list(validator.iter_errors(thisJson)))
+            print(currentFile, ":\n")
+            print(list(validator.iter_errors(thisJson)))
+            print("\n\n\n")
             
             if(len(list(validator.iter_errors(thisJson)))==0):
                 self.validJson.append(currentFile)
