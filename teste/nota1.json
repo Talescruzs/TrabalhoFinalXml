@@ -1,0 +1,201 @@
+{
+  "ns0:nfeProc": {
+    "@xmlns:ns0": "http://www.portalfiscal.inf.br/nfe",
+    "@versao": "2.00",
+    "ns0:NFe": {
+      "ns0:infNFe": {
+        "@versao": "2.00",
+        "@Id": "NFe35130309339936000205550030008469231382917898",
+        "ns0:ide": {
+          "ns0:cUF": "35",
+          "ns0:cNF": "38291789",
+          "ns0:natOp": "VENDA DE MERCADORIAS",
+          "ns0:indPag": "0",
+          "ns0:mod": "55",
+          "ns0:serie": "3",
+          "ns0:nNF": "846923",
+          "ns0:dEmi": "2013-03-20",
+          "ns0:tpNF": "1",
+          "ns0:cMunFG": "3505708",
+          "ns0:tpImp": "1",
+          "ns0:tpEmis": "1",
+          "ns0:cDV": "8",
+          "ns0:tpAmb": "1",
+          "ns0:finNFe": "1",
+          "ns0:procEmi": "0",
+          "ns0:verProc": "ABACOS V50B0070"
+        },
+        "ns0:emit": {
+          "ns0:CNPJ": "09339936000205",
+          "ns0:xNome": "NS2.Com Internet SA",
+          "ns0:xFant": "NETSHOES",
+          "ns0:enderEmit": {
+            "ns0:xLgr": "AV ARUANA",
+            "ns0:nro": "854",
+            "ns0:xBairro": "TAMBORE",
+            "ns0:cMun": "3505708",
+            "ns0:xMun": "BARUERI",
+            "ns0:UF": "SP",
+            "ns0:CEP": "06460908",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "BRASIL"
+          },
+          "ns0:IE": "206257690116",
+          "ns0:CRT": "3"
+        },
+        "ns0:dest": {
+          "ns0:CPF": "12345678900",
+          "ns0:xNome": "GIOVANI LIBRELOTTO",
+          "ns0:enderDest": {
+            "ns0:xLgr": "AV RORAIMA",
+            "ns0:nro": "1000",
+            "ns0:xCpl": "SALA 387",
+            "ns0:xBairro": "CAMOBI",
+            "ns0:cMun": "4316907",
+            "ns0:xMun": "SANTA MARIA",
+            "ns0:UF": "RS",
+            "ns0:CEP": "97010041",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "Brasil",
+            "ns0:fone": "5591234567"
+          },
+          "ns0:IE": "ISENTO",
+          "ns0:email": "librelotto@mail.com"
+        },
+        "ns0:det": {
+          "@nItem": "1",
+          "ns0:prod": {
+            "ns0:cProd": "025-1220-318-40",
+            "ns0:cEAN": "4051411545402",
+            "ns0:xProd": "Chuteira Puma Esito Finale IT",
+            "ns0:NCM": "64029990",
+            "ns0:CFOP": "6108",
+            "ns0:uCom": "PAR",
+            "ns0:qCom": "1",
+            "ns0:vUnCom": "94.91",
+            "ns0:vProd": "94.91",
+            "ns0:cEANTrib": "4051411545402",
+            "ns0:uTrib": "PAR",
+            "ns0:qTrib": "1",
+            "ns0:vUnTrib": "94.91",
+            "ns0:indTot": "1"
+          },
+          "ns0:imposto": {
+            "ns0:ICMS": {
+              "ns0:ICMS00": {
+                "ns0:orig": "2",
+                "ns0:CST": "00",
+                "ns0:modBC": "3",
+                "ns0:vBC": "94.91",
+                "ns0:pICMS": "18.00",
+                "ns0:vICMS": "17.08"
+              }
+            },
+            "ns0:IPI": {
+              "ns0:cEnq": "999",
+              "ns0:IPINT": {
+                "ns0:CST": "53"
+              }
+            },
+            "ns0:PIS": {
+              "ns0:PISAliq": {
+                "ns0:CST": "01",
+                "ns0:vBC": "94.91",
+                "ns0:pPIS": "1.65",
+                "ns0:vPIS": "1.57"
+              }
+            },
+            "ns0:COFINS": {
+              "ns0:COFINSAliq": {
+                "ns0:CST": "01",
+                "ns0:vBC": "94.91",
+                "ns0:pCOFINS": "7.60",
+                "ns0:vCOFINS": "7.21"
+              }
+            }
+          },
+          "ns0:infAdProd": "EAN 4051411545402"
+        },
+        "ns0:total": {
+          "ns0:ICMSTot": {
+            "ns0:vBC": "94.91",
+            "ns0:vICMS": "17.08",
+            "ns0:vBCST": "0.00",
+            "ns0:vST": "0.00",
+            "ns0:vProd": "94.91",
+            "ns0:vFrete": "0.00",
+            "ns0:vSeg": "0.00",
+            "ns0:vDesc": "0.00",
+            "ns0:vII": "0.00",
+            "ns0:vIPI": "0.00",
+            "ns0:vPIS": "1.57",
+            "ns0:vCOFINS": "7.21",
+            "ns0:vOutro": "0.00",
+            "ns0:vNF": "94.91"
+          }
+        },
+        "ns0:transp": {
+          "ns0:modFrete": "0",
+          "ns0:transporta": {
+            "ns0:xNome": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+            "ns0:IE": null
+          },
+          "ns0:vol": {
+            "ns0:qVol": "1",
+            "ns0:pesoL": "0.900",
+            "ns0:pesoB": "0.900"
+          }
+        },
+        "ns0:infAdic": {
+          "ns0:infCpl": "Pedido 10161609426 Pedido interno 24205819 Condicoes de Pagto BOLETO\n                    ANTECIPADO = 94,91"
+        }
+      },
+      "ns0:Signature": {
+        "ns0:SignedInfo": {
+          "ns0:CanonicalizationMethod": {
+            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+          },
+          "ns0:SignatureMethod": {
+            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+          },
+          "ns0:Reference": {
+            "@URI": "#NFe35130309339936000205550030008469231382917898",
+            "ns0:Transforms": {
+              "ns0:Transform": [
+                {
+                  "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                },
+                {
+                  "@Algorithm": "http://www.w3.org /TR/2001/REC-xml-c14n-20010315"
+                }
+              ]
+            },
+            "ns0:DigestMethod": {
+              "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+            },
+            "ns0:DigestValue": "Khhl3Fgh30yT1OL5Y1bBiTEIPxU="
+          }
+        },
+        "ns0:SignatureValue": "fH0tPgKJmOOueVjigRVG7sDk3gDnYz89enY4CkcG6l7eEfe2+YsD3Hu+5OiPElFrBt4mw5+eNk4WHU+ju/XYMheOwZNcTHelZp7s1OFcv0aTNCZKCWgLKOQQNGQgWT5t6H78QPmGe9Vho1cczxwBln+VmaT8B5NI8kNqgFMvo8GYguKBZk2ICyyDggOm5vEiGEZCB7m3Dci8H+Mmho3IfG4wbshJdBpESxJKfsP7CJizYO9aQTLa0eDi9A+8FOWi6v8prpoeWpGnq/ZGsQiQnGmw/yFe8OVcSoTXx1d5rbNDcPLS3W2i+SNn9g1zI5HucBuJ4kIpaJpXxQoAfeH+GQ==",
+        "ns0:KeyInfo": {
+          "ns0:X509Data": {
+            "ns0:X509Certificate": "MIIIPjCCBiagAwIBAgIQZFS8UWZ/4nqslJtmQDCi4jANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRvcmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIwOTEzMDAwMDAwWhcNMTMwOTEyMjM1OTU5WjCB1jELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1CcmFzaWwxODA2BgNVBAsUL0F1dGVudGljYWRvIHBvciBDZXJ0aXNpZ24gQ2VydGlmaWNhZG9yYSBEaWdpdGFsMRswGQYDVQQLFBJBc3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMzU5OTY2NzEdMBsGA1UEAxMUTlMyIENPTSBJTlRFUk5FVCBTIEExJTAjBgkqhkiG9w0BCQEWFmZpc2NhbEBuZXRzaG9lcy5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCbi5U3E1ot6/g+Q6P0qzC10/duAwL+iJVSsqBrMj26VvvMkUzqNH2nYaiXbpyNsCB+VLlWM4wd3PM8JdpYr3ZvhjF97NXJu04A76/zExO45nSFXQr0H7xW9TJSwZPrZo0nzepg01gNOxdLpie5xdOD+e5PrK3zuc+2oFM5X4zSCGKr6iLu08+01Y6RWxl1KXZfvV9UBpqWlkpyNQiliu+ZyvfIzUVEcz7pATj5K18KHhAF+XLx6/WGwvvY+yQbWKQvoRdBFbuXRy46TBAvIR3+UQonCNfJfqscX70mX4rm3DWnOpk65a5J2eQXoBhSmu5ycCxLiSKmh/jMiTQ7cnF9AgMBAAGjggNnMIIDYzCBrQYDVR0RBIGlMIGioDgGBWBMAQMEoC8ELTIwMDExOTc0MTY4NzY0NDE4NzMwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMKAaBgVgTAEDAqARBA9NQVJDSU8gS1VNUlVJQU6gGQYFYEwBAwOgEAQOMDkzMzk5MzYwMDAxMTagFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgRZmaXNjYWxAbmV0c2hvZXMuY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYDVR0PAQH/BAQDAgXgMIGJBgNVHSAEgYEwfzB9BgZgTAECAQswczBxBggrBgEFBQcCARZlaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX011bHRpcGxhL0RQQ19BQ19DZXJ0aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBcoFqgWIZWaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZYaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX011bHRpcGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3AuY2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAn0EicvbfA1yG+CbOjWp2EvRJXt0QmFtIAzit8RiFZfjlG4ad/P7K2SLP04D1no3+2WyiVogdHTuKJVnCTR5yKL2mEeLGUD3Vvc5cpIQg+Pce7oWYk//HJXLFmEg4zSsu0xHkJUuR1/FyZkzTTRCniaQrKEZJHwnHhcGtkrl3xnEQQt0l0U7pOctdc/LxEjarJaDdYwFqG7y7/Bzs92K6/M9BVtAlQpnsCOuCaN6qqWRD6CiH1bZMGs1Xtbo8KwrCBEaR5KpZKfoew/1uW8Tz9StCBCsB7MgY75v+PLy0jGv4qYsIYPkdzQWtQO5y11xJyKz8nmPZm/pZGInRrdmKvTOjiKYYCGcAt2wps4oM2W2zu7b5koiWRV6Q0/S9w1R/TOoFLBHGIsc/k4n7XpzMqx1EyGZQY3GPFXr6LKCtBMZLpoAiqhMHk7x7Sh4/axt+3Mo6or7KJyBpo4hozB45bD277v4O99vSHtSiU4Cz3EattDlW8Us0HG5dwmNIklmbQ+7n9ycp6XekfHe/lT2oBL8W1xPC2svsozDEV++h4b3/GqBDnV6FfmJRn9QVkhHsGYawF1u3U68vobzfal/4Qz/uGP2mF7fHBwHS5XVl3GCoVCIHcUM5M79nohzJePVOdGKImAUZJ0qPi+cdgKk4Y5oaE+WmccNgusrFWVbgH3M="
+          }
+        }
+      }
+    },
+    "ns0:protNFe": {
+      "@versao": "2.00",
+      "ns0:infProt": {
+        "ns0:tpAmb": "1",
+        "ns0:verAplic": "SP_NFE_PL_006q",
+        "ns0:chNFe": "35130309339936000205550030008469231382917898",
+        "ns0:dhRecbto": "2013-03-20T09:39:04",
+        "ns0:nProt": "135130163038192",
+        "ns0:digVal": "Khhl3Fgh30yT1OL5Y1bBiTEIPxU=",
+        "ns0:cStat": "100",
+        "ns0:xMotivo": "Autorizado o uso da NF-e"
+      }
+    }
+  }
+}
