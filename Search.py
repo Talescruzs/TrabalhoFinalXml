@@ -30,6 +30,7 @@ class Search:
         for layer in range(len(search)):
             try:
                 parsedSearch = parsedSearch[search[layer]]
+                # print(parsedSearch)
             except:
                 flag=1
                 if(type(parsedSearch)==list):
@@ -38,7 +39,12 @@ class Search:
                         if(a>=layer):
                             newSearch.append(search[layer])
                     for division in parsedSearch:
-                        results.append(self.__treeSearch(newSearch, division))
+                        if(len(self.__treeSearch(newSearch, division))>0):
+                            results.append(self.__treeSearch(newSearch, division))
+                        # print(newSearch)
+                        # print(division)
+                    
+                    
                 else:
                     pass
         if(flag==0):
