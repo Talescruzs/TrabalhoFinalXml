@@ -7,8 +7,14 @@
         <title>Notas</title>
     </head>
     <body>
-        <h1>{{a}}</h1>
-        <p>{{v}}</p>
+        <h1>Notas validadas para consulta</h1>
+        <div>
+            {% for i in range(0, qtdNotas) %} 
+                <p>{{notasValidas[i]}}</p>
+            {%endfor%}
+        </div>
+
+        <h1>{{ valores }}</h1>
     </body>
 </html>
 {% endblock %}

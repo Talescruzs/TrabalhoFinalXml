@@ -6,26 +6,36 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template("index.html", a=a, v=v)
+    return render_template("index.html", valores=teste, notasValidas=notasValidas, qtdNotas=len(notasValidas))
 
-@app.route('/teste')
-def teste():
-    return render_template("teste.html")
+@app.route('/consulta-produto')
+def consulta_produto():
+    return render_template("consulta-produto.html", consulta=consulta)
 
-@app.route('/about/')
-def about():
-    return '<h3>This is a Flask .</h3>'
+@app.route('/consulta-b')
+def consulta_b():
+    return render_template("consulta-b.html", consulta=consulta)
 
 if __name__ == "__main__":
     teste1 = Files("notasFiscais/", "Json/")
     teste2 = Validator(teste1, "schema.json")
+    notasValidas = list(teste2.validJson.keys())
+    for i in range(len(notasValidas)):
+        notasValidas[i] = notasValidas[i].replace(".json", "")
+    
     #vProd = valor de produto
     # print(teste2.validJson["nota5.json"]["ns0:nfeProc"]["ns0:NFe"]["ns0:infNFe"]["ns0:det"])
     teste3 = Search(teste2)
-    a=0
-    v=0
+    qtdProdutos=0
+    valorProdutos=0
+    valores = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
+    teste = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd", "nota1.json")
     for i in range(len(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem"))):
-        valor = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
-        a+=int(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem")[i][-1])
-        v+=float(valor[i])
+        qtdProdutos+=int(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem")[i][-1])
+        valorProdutos+=float(valores[i])
+    consulta={
+        "qtdProdutos" : qtdProdutos,
+        "valorProdutos" : valorProdutos
+    }
+        
     app.run(debug=True)

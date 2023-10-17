@@ -1,0 +1,20 @@
+{% extends "./header.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>consulta de produtos</title>
+    </head>
+    <body>
+        <h1>Total de produtos</h1>
+        <p>
+            {{ consulta["qtdProdutos"] }}
+        </p>
+        <h1>Valor total dos produtos</h1>
+        <p>
+            {{ consulta["valorProdutos"] }}
+        </p>
+    </body>
+</html>
+{% endblock %}
