@@ -7,14 +7,30 @@
         <title>Notas</title>
     </head>
     <body>
-        <h1>Notas validadas para consulta</h1>
-        <div>
-            {% for i in range(0, qtdNotas) %} 
-                <p>{{notasValidas[i]}}</p>
-            {%endfor%}
-        </div>
-
-        <h1>{{ valores }}</h1>
+        <h1>Total de produtos</h1>
+        <p>
+            {{ consulta_a["qtdProdutos"] }}
+        </p>
+        <h1>Valor total dos produtos</h1>
+        <p>
+            {{ consulta_a["valorProdutos"] }}
+        </p>
+        <h1>total de ISSQN retido</h1>
+        <p>
+            {{ consulta_b["ISSQN"] }}
+        </p>
+        <h1>total do ICMS</h1>
+        <p>
+            {{ consulta_b["ICMS"] }}
+        </p>
+        <h1>valor aproximado de tributos</h1>
+        <p>
+            {{ consulta_b["vTributos"] }}
+        </p>
+        <h1>total de frete dos produtos das notas</h1>
+        <p>
+            {{ consulta_b["frete"] }}
+        </p>
     </body>
 </html>
 {% endblock %}
