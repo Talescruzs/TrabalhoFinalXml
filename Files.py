@@ -8,6 +8,7 @@ class Files:
         self.xmlFiles = self.__getLocalFiles(xmlFolderPath)
         self.xmlFolder = xmlFolderPath
         self.jsonFolder = jsonFolderPath
+        self.invalidXML = dict()
 
         for file in range(len(self.xmlFiles)):
             self.__createJson(self.xmlFiles[file], file)
@@ -23,18 +24,21 @@ class Files:
 
     def __createJson(self, file:str, index:int):
         xmlFile = self.xmlFolder+file
-        xml_tree = ET.parse(xmlFile)
-        root = xml_tree.getroot()
-        to_string  = ET.tostring(root, encoding='UTF-8', method='xml')
-        xml_to_dict = xmltodict.parse(to_string)
+        try:
+            xml_tree = ET.parse(xmlFile)
+            root = xml_tree.getroot()
+            to_string  = ET.tostring(root, encoding='UTF-8', method='xml')
+            xml_to_dict = xmltodict.parse(to_string)
 
-        with open("{0}/{1}.json".format(self.jsonFolder ,file.split(".")[0]), "w",) as json_file:
-            json.dump(xml_to_dict, json_file, indent = 2)
+            with open("{0}/{1}.json".format(self.jsonFolder ,file.split(".")[0]), "w",) as json_file:
+                json.dump(xml_to_dict, json_file, indent = 2)
+        except:
+            self.invalidXML["{0}.xml".format(file.split(".")[0])]="XML inválido"
 
 class Validator:
     def __init__(self, files:Files, jsonSchemaPath:str):
         self.validJson = dict()
-        self.invalidJson = list()
+        self.invalidJson = files.invalidXML
         self.files=files
 
         with open(jsonSchemaPath, 'r') as file:
@@ -52,10 +56,12 @@ class Validator:
             if(len(list(validator.iter_errors(thisJson)))==0):
                 self.validJson[currentFile]=thisJson
             else:
-                self.invalidJson.append(currentFile)
+                self.invalidJson[currentFile]="Fora do schema"
 
 if __name__ == "__main__":
     teste1 = Files("notasFiscais/", "teste/")
     teste2 = Validator(teste1, "schema.json")
     for k in teste2.validJson:
+        print(k)
+    for k in teste2.invalidJson:
         print(k)
