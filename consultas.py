@@ -4,10 +4,8 @@ from Search import Search
 def consulta_a(files: Search):
     qtdProdutos=0
     valorProdutos=0
-    valores = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
-    for i in range(len(files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem"))):
-        qtdProdutos+=int(files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem")[i][-1])
-        valorProdutos+=float(valores[i])
+    valorProdutos = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
+    qtdProdutos = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem")
     consulta={
         "qtdProdutos" : qtdProdutos,
         "valorProdutos" : valorProdutos
@@ -17,15 +15,51 @@ def consulta_a(files: Search):
 def consulta_b(files: Search):
     frete=0
     icms=0
-    valoresIcms = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vICMS")
-    valoresFrete = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vFrete")
-    for i in range(len(files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem"))):
-        icms+=float(valoresIcms[i])
-        frete+=float(valoresFrete[i])
+    icms = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vICMS")
+    frete = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vFrete")
+    issqn = {"total" : 0}
+    tributos = {"total" : 0}
     consulta={
-        "ISSQN" : 'nada retido',
+        "ISSQN" : issqn,
         "ICMS" : icms,
-        "vTributos" : 'apenas o icms',
+        "vTributos" : issqn,
         "frete" : frete
     }
     return consulta
+
+def detalhes(files: Search, file: str):
+    nomeProd = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/ns0:prod/ns0:xProd")[file]
+    nomeRemetente = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:dest/ns0:xNome")[file]
+    valorProd = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/ns0:prod/ns0:vProd")[file]
+
+    consulta={
+        "nomeProd" : nomeProd,
+        "nomeRemetente" : nomeRemetente,
+        "valorProd" : valorProd
+    }
+
+    return consulta
+
+def consulta_c(files: Search):
+    precos = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
+    menorPreco = precos["total"]
+    notasMenorPreco = list()
+    consulta=dict()
+    for k in precos:
+        if(k!="total"):
+            if(float(precos[k])<float(menorPreco)):
+                notasMenorPreco = list([k])
+                menorPreco=precos[k]
+            elif(float(precos[k])==float(menorPreco)):
+                notasMenorPreco.append(k)
+    
+    for nota in notasMenorPreco:
+        consulta[nota] = detalhes(files, nota)
+
+    return consulta
+
+if __name__=="__main__":
+    teste1 = Files("notasFiscais/", "Json/")
+    teste2 = Validator(teste1, "schema.json")
+    teste3 = Search(teste2)
+    print(consulta_c(teste3))

@@ -9,28 +9,39 @@
     <body>
         <h1>Total de produtos</h1>
         <p>
-            {{ consulta_a["qtdProdutos"] }}
+            {{ consulta_a["qtdProdutos"]["total"] }}
         </p>
         <h1>Valor total dos produtos</h1>
         <p>
-            {{ consulta_a["valorProdutos"] }}
+            {{ consulta_a["valorProdutos"]["total"] }}
         </p>
         <h1>total de ISSQN retido</h1>
         <p>
-            {{ consulta_b["ISSQN"] }}
+            {{ consulta_b["ISSQN"]["total"] }}
         </p>
         <h1>total do ICMS</h1>
         <p>
-            {{ consulta_b["ICMS"] }}
+            {{ consulta_b["ICMS"]["total"] }}
         </p>
         <h1>valor aproximado de tributos</h1>
         <p>
-            {{ consulta_b["vTributos"] }}
+            {{ consulta_b["vTributos"]["total"] }}
         </p>
         <h1>total de frete dos produtos das notas</h1>
         <p>
-            {{ consulta_b["frete"] }}
+            {{ consulta_b["frete"]["total"] }}
         </p>
+        <h1>produto(s) com menor preço</h1>
+        {% for i in range(0, qtdMenor) %} 
+            <h2>{{ notasMenor[i] }}</h2>
+            <h3>nome do produto:</h3>
+            <p>{{consulta_c[notasMenor[i]]["nomeProd"]}}</p>
+            <h3>nome do remetente:</h3>
+            <p>{{consulta_c[notasMenor[i]]["nomeRemetente"]}}</p>
+            <h3>valor do produto:</h3>
+            <p>{{consulta_c[notasMenor[i]]["valorProd"]}}</p>
+        {%endfor%}
+
     </body>
 </html>
 {% endblock %}

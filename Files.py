@@ -59,7 +59,7 @@ class Validator:
                 self.invalidJson[currentFile]="Fora do schema"
 
 if __name__ == "__main__":
-    teste1 = Files("notasFiscais/", "teste/")
+    teste1 = Files("notasFiscais/", "Json/")
     teste2 = Validator(teste1, "schema.json")
     for k in teste2.validJson:
         print(k)
