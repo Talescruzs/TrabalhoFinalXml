@@ -7,41 +7,192 @@
         <title>Notas</title>
     </head>
     <body>
-        <h1>Total de produtos</h1>
-        <p>
-            {{ consulta_a["qtdProdutos"]["total"] }}
-        </p>
-        <h1>Valor total dos produtos</h1>
-        <p>
-            {{ consulta_a["valorProdutos"]["total"] }}
-        </p>
-        <h1>total de ISSQN retido</h1>
-        <p>
-            {{ consulta_b["ISSQN"]["total"] }}
-        </p>
-        <h1>total do ICMS</h1>
-        <p>
-            {{ consulta_b["ICMS"]["total"] }}
-        </p>
-        <h1>valor aproximado de tributos</h1>
-        <p>
-            {{ consulta_b["vTributos"]["total"] }}
-        </p>
-        <h1>total de frete dos produtos das notas</h1>
-        <p>
-            {{ consulta_b["frete"]["total"] }}
-        </p>
-        <h1>produto(s) com menor preço</h1>
-        {% for i in range(0, qtdMenor) %} 
-            <h2>{{ notasMenor[i] }}</h2>
-            <h3>nome do produto:</h3>
-            <p>{{consulta_c[notasMenor[i]]["nomeProd"]}}</p>
-            <h3>nome do remetente:</h3>
-            <p>{{consulta_c[notasMenor[i]]["nomeRemetente"]}}</p>
-            <h3>valor do produto:</h3>
-            <p>{{consulta_c[notasMenor[i]]["valorProd"]}}</p>
-        {%endfor%}
-
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Total de produtos 
+                                </div>
+                                <div>
+                                    {{ consulta_a["qtdProdutos"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Valor total dos produtos 
+                                </div>
+                                <div>
+                                    {{ consulta_a["valorProdutos"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Total de ISSQN retido 
+                                </div>
+                                <div>
+                                    {{ consulta_b["ISSQN"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Total do ICMS 
+                                </div>
+                                <div>
+                                    {{ consulta_b["ICMS"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Valor aproximado de tributos 
+                                </div>
+                                <div>
+                                    {{ consulta_b["vTributos"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="card mt-3 text-white bg-dark">
+                        <div class="card-body justify-content-between align-items-start">
+                            <div>
+                                <div class="fs-3 fw-bold">
+                                    Total de frete dos produtos das notas 
+                                </div>
+                                <div>
+                                    {{ consulta_b["frete"]["total"] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card mt-5 text-white bg-dark pb-3 pt-2">
+                        <div class="card-body text-center align-items-center">
+                            <div>
+                                <div class="fs-2 fw-bold">
+                                    PRODUTO(S) COM MENOR PREÇO 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% for i in range(0, qtdMenor) %} 
+                <div class="row">
+                    <div class="col-sm-6 col-lg-1">
+                    </div>
+                    <div class="col-sm-6 col-lg-10">
+                        <div class="card mt-1 text-white bg-dark">
+                            <div class="card-body justify-content-between align-items-start">
+                                <div>
+                                    <div class="fs-3 fw-bold">
+                                        Nome do produto:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["nomeProd"]}}
+                                    </div>
+                                    <div class="fs-3 fw-bold">
+                                        Nome do remetente:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["nomeRemetente"]}}
+                                    </div>
+                                    <div class="fs-3 fw-bold">
+                                        Valor do produto:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["valorProd"]}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-1">
+                    </div>
+                </div>
+            {%endfor%}
+            <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card mt-5 text-white bg-dark pb-3 pt-2">
+                        <div class="card-body text-center align-items-center">
+                            <div>
+                                <div class="fs-2 fw-bold">
+                                    PRODUTO(S) COM MAIOR IMPOSTO 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% for i in range(0, qtdMenor) %} 
+                <div class="row">
+                    <div class="col-sm-6 col-lg-1">
+                    </div>
+                    <div class="col-sm-6 col-lg-10">
+                        <div class="card mt-1 text-white bg-dark">
+                            <div class="card-body justify-content-between align-items-start">
+                                <div>
+                                    <div class="fs-3 fw-bold">
+                                        Nome do produto:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["nomeProd"]}}
+                                    </div>
+                                    <div class="fs-3 fw-bold">
+                                        Nome do remetente:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["nomeRemetente"]}}
+                                    </div>
+                                    <div class="fs-3 fw-bold">
+                                        Valor do produto:
+                                    </div>
+                                    <div>
+                                        {{consulta_c[notasMenor[i]]["valorProd"]}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-1">
+                    </div>
+                </div>
+            {%endfor%}
+        </div>
     </body>
 </html>
 {% endblock %}

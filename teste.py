@@ -13,10 +13,6 @@ def index():
         consulta_a=consulta_a, consulta_b=consulta_b, 
         consulta_c=consulta_c, qtdMenor=len(consulta_c.values()), notasMenor=list(consulta_c.keys()))
 
-# @app.route('/consulta-produto')
-# def consulta_produto():
-#     return render_template("consulta-produto.html", consulta=consulta_a)
-
 @app.route('/notas/<name>')
 def notas(name):
     return render_template(
