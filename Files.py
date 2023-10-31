@@ -56,6 +56,7 @@ class Validator:
             if(len(list(validator.iter_errors(thisJson)))==0):
                 self.validJson[currentFile]=thisJson
             else:
+                print(list(validator.iter_errors(thisJson)))
                 self.invalidJson[currentFile]="Fora do schema"
 
 if __name__ == "__main__":

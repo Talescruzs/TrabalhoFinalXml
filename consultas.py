@@ -17,8 +17,9 @@ def consulta_b(files: Search):
     icms=0
     icms = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vICMS")
     frete = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vFrete")
-    issqn = {"total" : 0}
-    tributos = {"total" : 0}
+    issqn = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ISSQNtot/ns0:vISS")
+    tributos = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vFrete")
+    # tributos = {"total" : 0}
     consulta={
         "ISSQN" : issqn,
         "ICMS" : icms,

@@ -18,8 +18,10 @@ def notas(name):
     return render_template(
         "nota.html", notasValidas=notasValidas, 
         qtdNotas=len(notasValidas), consulta=consulta_a, 
-        name=consulta_a["qtdProdutos"][name+".json"],
-        detalhes=consultas.detalhes(teste3, name+".json"))
+        qtdProdutos=consulta_a["qtdProdutos"][name+".json"],
+        name=name,
+        detalhes=consultas.detalhes(teste3, name+".json")
+        )
 
 if __name__ == "__main__":
     teste1 = Files("notasFiscais/", "Json/")

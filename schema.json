@@ -86,7 +86,6 @@
                       "ns0:mod",
                       "ns0:serie",
                       "ns0:nNF",
-                      "ns0:dEmi",
                       "ns0:tpNF",
                       "ns0:cMunFG",
                       "ns0:tpImp",
@@ -170,9 +169,7 @@
                       "ns0:CNPJ",
                       "ns0:xNome",
                       "ns0:xFant",
-                      "ns0:enderEmit",
-                      "ns0:IE",
-                      "ns0:CRT"
+                      "ns0:enderEmit"
                     ]
                   },
                   "ns0:dest": {
@@ -224,7 +221,6 @@
                         "required": [
                           "ns0:xLgr",
                           "ns0:nro",
-                          "ns0:xCpl",
                           "ns0:xBairro",
                           "ns0:cMun",
                           "ns0:xMun",
@@ -243,10 +239,8 @@
                       }
                     },
                     "required": [
-                      "ns0:CPF",
                       "ns0:xNome",
                       "ns0:enderDest",
-                      "ns0:IE",
                       "ns0:email"
                     ]
                   },
@@ -282,7 +276,6 @@
                       "ns0:CPF",
                       "ns0:xLgr",
                       "ns0:nro",
-                      "ns0:xCpl",
                       "ns0:xBairro",
                       "ns0:cMun",
                       "ns0:xMun",
