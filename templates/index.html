@@ -170,14 +170,14 @@
                         <div class="card-body text-center align-items-center">
                             <div>
                                 <div class="fs-2 fw-bold">
-                                    PRODUTO(S) COM MAIOR IMPOSTO 
+                                    NOTA(S) COM MAIOR IMPOSTO 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {% for i in range(0, qtdMenor) %} 
+            {% for i in range(0, qtdMaior) %} 
                 <div class="row">
                     <div class="col-sm-6 col-lg-1">
                     </div>
@@ -186,28 +186,28 @@
                             <div class="card-body justify-content-between align-items-start">
                                 <div>
                                     <div class="fs-3 fw-bold">
-                                        Está na nota:
+                                        Nota:
                                     </div>
                                     <div>
-                                        {{notasMenor[i]}}
+                                        {{notasMaior[i]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
                                         Nome do produto:
                                     </div>
                                     <div>
-                                        {{consulta_c[notasMenor[i]]["nomeProd"]}}
+                                        {{consulta_d[notasMaior[i]]["nomeProd"]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
                                         Nome do remetente:
                                     </div>
                                     <div>
-                                        {{consulta_c[notasMenor[i]]["nomeRemetente"]}}
+                                        {{consulta_d[notasMaior[i]]["nomeRemetente"]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
                                         Valor do produto:
                                     </div>
                                     <div>
-                                        {{consulta_c[notasMenor[i]]["valorProd"]}}
+                                        {{consulta_d[notasMaior[i]]["valorProd"]}}
                                     </div>
                                 </div>
                             </div>

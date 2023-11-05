@@ -11,7 +11,9 @@ def index():
         "index.html", valores=notasValidas, 
         notasValidas=notasValidas, qtdNotas=len(notasValidas), 
         consulta_a=consulta_a, consulta_b=consulta_b, 
-        consulta_c=consulta_c, qtdMenor=len(consulta_c.values()), notasMenor=list(consulta_c.keys()))
+        consulta_c=consulta_c, consulta_d=consulta_d,
+        qtdMenor=len(consulta_c.values()), notasMenor=list(consulta_c.keys()),
+        qtdMaior=len(consulta_d.values()), notasMaior=list(consulta_d.keys()))
 
 @app.route('/notas/<name>')
 def notas(name):
@@ -38,5 +40,6 @@ if __name__ == "__main__":
     consulta_a = consultas.consulta_a(teste3)
     consulta_b = consultas.consulta_b(teste3)
     consulta_c = consultas.consulta_c(teste3)
+    consulta_d = consultas.consulta_d(teste3)
         
     app.run(debug=True)

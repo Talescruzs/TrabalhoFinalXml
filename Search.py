@@ -46,6 +46,9 @@ class Search:
 
         for file in filesSearched:
             results[file] = self.__treeSearch(processedSearch, file)
+            if(type(results[file])==dict):
+                results[file] = '0'
+
         for k in results:
             try:
                 total+=float(results[k])
@@ -66,4 +69,4 @@ if __name__ == "__main__":
     #     v+=float(valor[i])
     # print(a)
     # print(v)
-    print(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vICMS"))
+    print(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vTotTrib"))
