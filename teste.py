@@ -10,7 +10,7 @@ def index():
     return render_template(
         "index.html", valores=notasValidas, 
         notasValidas=notasValidas, qtdNotas=len(notasValidas), 
-        consulta_a=consulta_a, consulta_b=consulta_b, 
+        geralSearch=geralSearch,
         consulta_c=consulta_c, consulta_d=consulta_d,
         qtdMenor=len(consulta_c.values()), notasMenor=list(consulta_c.keys()),
         qtdMaior=len(consulta_d.values()), notasMaior=list(consulta_d.keys()))
@@ -19,8 +19,8 @@ def index():
 def notas(name):
     return render_template(
         "nota.html", notasValidas=notasValidas, 
-        qtdNotas=len(notasValidas), consulta=consulta_a, 
-        qtdProdutos=consulta_a["qtdProdutos"][name+".json"],
+        qtdNotas=len(notasValidas),
+        qtdProdutos=consultas.consulta_d(teste3, name+".json"),
         name=name,
         detalhes=consultas.detalhes(teste3, name+".json")
         )
@@ -37,8 +37,7 @@ if __name__ == "__main__":
     for i in range(len(notasValidas)):
         notasValidas[i] = notasValidas[i].replace(".json", "")
 
-    consulta_a = consultas.consulta_a(teste3)
-    consulta_b = consultas.consulta_b(teste3)
+    geralSearch = consultas.geralSearch(teste3)
     consulta_c = consultas.consulta_c(teste3)
     consulta_d = consultas.consulta_d(teste3)
         

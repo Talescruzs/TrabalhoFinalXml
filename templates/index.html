@@ -30,7 +30,7 @@
                                     Total de produtos 
                                 </div>
                                 <div>
-                                    {{ consulta_a["qtdProdutos"]["total"] }}
+                                    {{ geralSearch["qtdProdutos"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                                     Valor total dos produtos 
                                 </div>
                                 <div>
-                                    {{ consulta_a["valorProdutos"]["total"] }}
+                                    {{ geralSearch["valorProdutos"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                     Total de ISSQN retido 
                                 </div>
                                 <div>
-                                    {{ consulta_b["ISSQN"]["total"] }}
+                                    {{ geralSearch["ISSQN"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                                     Total do ICMS 
                                 </div>
                                 <div>
-                                    {{ consulta_b["ICMS"]["total"] }}
+                                    {{ geralSearch["ICMS"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                     Valor aproximado de tributos 
                                 </div>
                                 <div>
-                                    {{ consulta_b["vTributos"]["total"] }}
+                                    {{ geralSearch["vTributos"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                                     Total de frete dos produtos das notas 
                                 </div>
                                 <div>
-                                    {{ consulta_b["frete"]["total"] }}
+                                    {{ geralSearch["frete"]["total"] }}
                                 </div>
                             </div>
                         </div>
@@ -192,10 +192,10 @@
                                         {{notasMaior[i]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
-                                        Nome do produto:
+                                        Quantidade de produtos na nota:
                                     </div>
                                     <div>
-                                        {{consulta_d[notasMaior[i]]["nomeProd"]}}
+                                        {{consulta_d[notasMaior[i]]["qtdProdutos"]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
                                         Nome do remetente:
@@ -204,10 +204,16 @@
                                         {{consulta_d[notasMaior[i]]["nomeRemetente"]}}
                                     </div>
                                     <div class="fs-3 fw-bold">
-                                        Valor do produto:
+                                        Valor da nota:
                                     </div>
                                     <div>
-                                        {{consulta_d[notasMaior[i]]["valorProd"]}}
+                                        {{consulta_d[notasMaior[i]]["valorProdutos"]}}
+                                    </div>
+                                    <div class="fs-3 fw-bold">
+                                        Valor do imposto da nota:
+                                    </div>
+                                    <div>
+                                        {{consulta_d[notasMaior[i]]["VImposto"]}}
                                     </div>
                                 </div>
                             </div>
