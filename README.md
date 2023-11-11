@@ -1,14 +1,14 @@
-
 # Detalhes:
-Schema de json criado pelo site: https://www.liquid-technologies.com/online-json-to-schema-converter e editado
+Schema de json criado pelo site: https://www.liquid-technologies.com/online-json-to-schema-converter e editado <br>
+IDE ustilizada : VSCodium
 # Passos para rodar no linux:
-1- ter o python instalado
-2- utilizar o comando no terminal: pip install xmltodict 
-3- utilizar o comando no terminal: pip install jsonschema
+ 1- ter o python 3.10.12 instalado <br>
+ 2- utilizar o comando no terminal: pip install xmltodict <br>
+ 3- utilizar o comando no terminal: pip install jsonschema
 ## Instalação do flask:
-1- pip install flask
-2- python3 -c "import flask; print(flask.__version__)"
-3- export FLASK_APP=main(trocar nome para main)
-4- export FLASK_ENV=development
-5- flask run
-6- acessar http://127.0.0.1:5000/about/
+1- utilizar o comando no terminal: pip install flask <br>
+2- utilizar o comando no terminal: python3 -c "import flask; print(flask.__version__)" <br>
+3- utilizar o comando no terminal: export FLASK_APP=server.py <br>
+4- utilizar o comando no terminal: export FLASK_ENV=development <br>
+5- utilizar o comando no terminal: flask run ou rode o arquivo server.py<br>
+6- acessar http://127.0.0.1:5000 <br>

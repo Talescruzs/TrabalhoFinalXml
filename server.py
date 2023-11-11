@@ -5,6 +5,18 @@ import consultas
 
 app = Flask(__name__)
 
+files = Files("notasFiscais/", "Json/")
+validate = Validator(files, "schema.json")
+search = Search(validate)
+
+notasValidas = list(search.validFiles.keys())
+for i in range(len(notasValidas)):
+    notasValidas[i] = notasValidas[i].replace(".json", "")
+
+geralSearch = consultas.geralSearch(search)
+consulta_c = consultas.consulta_c(search)
+consulta_d = consultas.consulta_d(search)
+
 @app.route('/')
 def index():
     return render_template(
@@ -21,25 +33,21 @@ def notas(name):
         "nota.html", notasValidas=notasValidas, 
         qtdNotas=len(notasValidas),
         name=name,
-        detalhesNota=consultas.detalhesNota(teste3, name+".json")
-        # detalhes=consultas.detalhes(teste3, name+".json")
+        detalhesNota=consultas.detalhesNota(search, name+".json")
         )
 
 if __name__ == "__main__":
-    teste1 = Files("notasFiscais/", "Json/")
-    teste2 = Validator(teste1, "schema.json")
-
+    files = Files("notasFiscais/", "Json/")
+    validate = Validator(files, "schema.json")
+    search = Search(validate)
     
-    #vProd = valor de produto
-    # print(teste2.validJson["nota5.json"]["ns0:nfeProc"]["ns0:NFe"]["ns0:infNFe"]["ns0:det"])
-    teste3 = Search(teste2)
-    notasValidas = list(teste3.validFiles.keys())
+    notasValidas = list(search.validFiles.keys())
     for i in range(len(notasValidas)):
         notasValidas[i] = notasValidas[i].replace(".json", "")
 
-    geralSearch = consultas.geralSearch(teste3)
-    consulta_c = consultas.consulta_c(teste3)
-    consulta_d = consultas.consulta_d(teste3)
+    geralSearch = consultas.geralSearch(search)
+    consulta_c = consultas.consulta_c(search)
+    consulta_d = consultas.consulta_d(search)
     
         
     app.run(debug=True)

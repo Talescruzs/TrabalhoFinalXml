@@ -22,30 +22,27 @@ class Search:
     
     def __treeSearch(self, search, file):
         parsedSearch = self.validFiles[file]
-        flag = 0
-        results = dict()
-        for layer in range(len(search)):
+        for layer in search:
             try:
-                parsedSearch = parsedSearch[search[layer]]
+                parsedSearch = parsedSearch[layer]
             except:
                 if(type(parsedSearch)==list):
                     newSearch = list()
                     for a in parsedSearch:
-                        newSearch.append(a[search[layer]])
+                        newSearch.append(a[layer])
                     parsedSearch = newSearch
                 else:
                     pass
-        results = parsedSearch
 
-        return results
+        return parsedSearch
 
     def search(self, search:str, nameFiles="."):
         results = dict()
-        filesSearched = self.__nameFilesProcessing(nameFiles)
+        filesToSearch = self.__nameFilesProcessing(nameFiles)
         processedSearch = self.__searchProcessing(search)  
         total = 0
 
-        for file in filesSearched:
+        for file in filesToSearch:
             results[file] = self.__treeSearch(processedSearch, file)
             if(type(results[file])==dict):
                 results[file] = '0'
@@ -68,13 +65,5 @@ if __name__ == "__main__":
     teste1 = Files("notasFiscais/", "Json/")
     teste2 = Validator(teste1, "schema.json")
     teste3 = Search(teste2)
-    # a=0
-    # v=0
-    # for i in range(len(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem"))):
-    #     valor = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vProd")
-    #     a+=int(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/@nItem")[i][-1])
-    #     v+=float(valor[i])
-    # print(a)
-    # print(v)
     precos = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/ns0:prod/ns0:vProd")
     print(precos)
