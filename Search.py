@@ -31,7 +31,8 @@ class Search:
                 if(type(parsedSearch)==list):
                     newSearch = list()
                     for a in parsedSearch:
-                        parsedSearch = a[search[layer]]
+                        newSearch.append(a[search[layer]])
+                    parsedSearch = newSearch
                 else:
                     pass
         results = parsedSearch
@@ -53,7 +54,13 @@ class Search:
             try:
                 total+=float(results[k])
             except:
-                pass
+                if(type(results[k])==list):
+                    try:
+                        for a in results[k]:
+                            total+=float(a)
+                    except:
+                        pass
+                        
         results["total"]=str(total)
         return results
 
@@ -69,4 +76,5 @@ if __name__ == "__main__":
     #     v+=float(valor[i])
     # print(a)
     # print(v)
-    print(teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vTotTrib"))
+    precos = teste3.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:det/ns0:prod/ns0:vProd")
+    print(precos)

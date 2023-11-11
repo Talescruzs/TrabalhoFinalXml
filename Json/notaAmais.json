@@ -1,0 +1,413 @@
+{
+  "ns0:nfeProc": {
+    "@xmlns:ns0": "http://www.portalfiscal.inf.br/nfe",
+    "@xmlns:ns1": "http://www.w3.org/2000/09/xmldsig#",
+    "@versao": "3.10",
+    "ns0:NFe": {
+      "ns0:infNFe": {
+        "@Id": "NFe35150300822602000124550010009923461099234656",
+        "@versao": "3.10",
+        "ns0:ide": {
+          "ns0:cUF": "35",
+          "ns0:cNF": "09923465",
+          "ns0:natOp": "Venda prod. do estab.",
+          "ns0:indPag": "1",
+          "ns0:mod": "55",
+          "ns0:serie": "1",
+          "ns0:nNF": "992346",
+          "ns0:dhEmi": "2015-03-27T09:40:00-03:00",
+          "ns0:dEmi": "2017-07-02",
+          "ns0:dhSaiEnt": "2015-03-27T09:40:00-03:00",
+          "ns0:tpNF": "1",
+          "ns0:idDest": "1",
+          "ns0:cMunFG": "3550308",
+          "ns0:tpImp": "1",
+          "ns0:tpEmis": "1",
+          "ns0:cDV": "6",
+          "ns0:tpAmb": "2",
+          "ns0:finNFe": "1",
+          "ns0:indFinal": "1",
+          "ns0:indPres": "3",
+          "ns0:procEmi": "3",
+          "ns0:verProc": "3.10.43"
+        },
+        "ns0:emit": {
+          "ns0:CNPJ": "00822602000124",
+          "ns0:xNome": "Plotag Sistemas e Suprimentos Ltda",
+          "ns0:xFant": "Plotag - Localhost",
+          "ns0:enderEmit": {
+            "ns0:xLgr": "Rua Solon",
+            "ns0:nro": "558",
+            "ns0:xBairro": "Bom Retiro",
+            "ns0:cMun": "3550308",
+            "ns0:xMun": "Sao Paulo",
+            "ns0:UF": "SP",
+            "ns0:CEP": "01127010",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "BRASIL",
+            "ns0:fone": "1123587604"
+          },
+          "ns0:IE": "114489114119",
+          "ns0:CRT": "1"
+        },
+        "ns0:dest": {
+          "ns0:CNPJ": "99999999000191",
+          "ns0:xNome": "NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+          "ns0:enderDest": {
+            "ns0:xLgr": "Rua Jaragua",
+            "ns0:nro": "774",
+            "ns0:xBairro": "Bom Retiro",
+            "ns0:cMun": "3550308",
+            "ns0:xMun": "Sao Paulo",
+            "ns0:UF": "SP",
+            "ns0:CEP": "01129000",
+            "ns0:cPais": "1058",
+            "ns0:xPais": "BRASIL",
+            "ns0:fone": "33933501"
+          },
+          "ns0:indIEDest": "9",
+          "ns0:email": "gui_calabria@yahoo.com.br"
+        },
+        "ns0:det": [
+          {
+            "@nItem": "1",
+            "ns0:prod": {
+              "ns0:cProd": "B17025056",
+              "ns0:cEAN": null,
+              "ns0:xProd": "PAPEL MAXPLOT- 170MX250MX56GRS 3\"",
+              "ns0:NCM": "48025599",
+              "ns0:CFOP": "5101",
+              "ns0:uCom": "Rl",
+              "ns0:qCom": "1.0000",
+              "ns0:vUnCom": "138.3000",
+              "ns0:vProd": "138.30",
+              "ns0:cEANTrib": null,
+              "ns0:uTrib": "RL",
+              "ns0:qTrib": "1.0000",
+              "ns0:vUnTrib": "138.3000",
+              "ns0:indTot": "1"
+            },
+            "ns0:imposto": {
+              "ns0:vTotTrib": "41.49",
+              "ns0:ICMS": {
+                "ns0:ICMSSN101": {
+                  "ns0:orig": "0",
+                  "ns0:CSOSN": "101",
+                  "ns0:pCredSN": "2.5600",
+                  "ns0:vCredICMSSN": "3.54"
+                }
+              },
+              "ns0:IPI": {
+                "ns0:clEnq": "48025",
+                "ns0:CNPJProd": "00822602000124",
+                "ns0:cEnq": "599",
+                "ns0:IPINT": {
+                  "ns0:CST": "53"
+                }
+              },
+              "ns0:PIS": {
+                "ns0:PISNT": {
+                  "ns0:CST": "07"
+                }
+              },
+              "ns0:COFINS": {
+                "ns0:COFINSNT": {
+                  "ns0:CST": "07"
+                }
+              }
+            }
+          },
+          {
+            "@nItem": "2",
+            "ns0:prod": {
+              "ns0:cProd": "1070100752",
+              "ns0:cEAN": null,
+              "ns0:xProd": "PAPEL MAXPLOT- 1070X100MX75GRS 2\"",
+              "ns0:NCM": "48025599",
+              "ns0:CFOP": "5101",
+              "ns0:uCom": "RL",
+              "ns0:qCom": "1.0000",
+              "ns0:vUnCom": "48.9100",
+              "ns0:vProd": "48.91",
+              "ns0:cEANTrib": null,
+              "ns0:uTrib": "RL",
+              "ns0:qTrib": "1.0000",
+              "ns0:vUnTrib": "48.9100",
+              "ns0:indTot": "1"
+            },
+            "ns0:imposto": {
+              "ns0:vTotTrib": "14.67",
+              "ns0:ICMS": {
+                "ns0:ICMSSN101": {
+                  "ns0:orig": "0",
+                  "ns0:CSOSN": "101",
+                  "ns0:pCredSN": "2.5600",
+                  "ns0:vCredICMSSN": "1.25"
+                }
+              },
+              "ns0:IPI": {
+                "ns0:clEnq": "48025",
+                "ns0:CNPJProd": "00822602000124",
+                "ns0:cEnq": "599",
+                "ns0:IPINT": {
+                  "ns0:CST": "53"
+                }
+              },
+              "ns0:PIS": {
+                "ns0:PISNT": {
+                  "ns0:CST": "07"
+                }
+              },
+              "ns0:COFINS": {
+                "ns0:COFINSNT": {
+                  "ns0:CST": "07"
+                }
+              }
+            }
+          },
+          {
+            "@nItem": "3",
+            "ns0:prod": {
+              "ns0:cProd": "B17025056",
+              "ns0:cEAN": null,
+              "ns0:xProd": "PAPEL MAXPLOT- 170MX250MX56GRS 3\"",
+              "ns0:NCM": "48025599",
+              "ns0:CFOP": "5101",
+              "ns0:uCom": "Rl",
+              "ns0:qCom": "1.0000",
+              "ns0:vUnCom": "138.3000",
+              "ns0:vProd": "138.30",
+              "ns0:cEANTrib": null,
+              "ns0:uTrib": "RL",
+              "ns0:qTrib": "1.0000",
+              "ns0:vUnTrib": "138.3000",
+              "ns0:indTot": "1"
+            },
+            "ns0:imposto": {
+              "ns0:vTotTrib": "41.49",
+              "ns0:ICMS": {
+                "ns0:ICMSSN101": {
+                  "ns0:orig": "0",
+                  "ns0:CSOSN": "101",
+                  "ns0:pCredSN": "2.5600",
+                  "ns0:vCredICMSSN": "3.54"
+                }
+              },
+              "ns0:IPI": {
+                "ns0:clEnq": "48025",
+                "ns0:CNPJProd": "00822602000124",
+                "ns0:cEnq": "599",
+                "ns0:IPINT": {
+                  "ns0:CST": "53"
+                }
+              },
+              "ns0:PIS": {
+                "ns0:PISNT": {
+                  "ns0:CST": "07"
+                }
+              },
+              "ns0:COFINS": {
+                "ns0:COFINSNT": {
+                  "ns0:CST": "07"
+                }
+              }
+            }
+          },
+          {
+            "@nItem": "4",
+            "ns0:prod": {
+              "ns0:cProd": "B17040056",
+              "ns0:cEAN": null,
+              "ns0:xProd": "PAPEL MAXPLOT - 1.700X400MX 56 GRS 3\"",
+              "ns0:NCM": "48025599",
+              "ns0:CFOP": "5101",
+              "ns0:uCom": "Rl",
+              "ns0:qCom": "1.0000",
+              "ns0:vUnCom": "214.5700",
+              "ns0:vProd": "214.57",
+              "ns0:cEANTrib": null,
+              "ns0:uTrib": "Rl",
+              "ns0:qTrib": "1.0000",
+              "ns0:vUnTrib": "214.5700",
+              "ns0:indTot": "1"
+            },
+            "ns0:imposto": {
+              "ns0:vTotTrib": "64.37",
+              "ns0:ICMS": {
+                "ns0:ICMSSN101": {
+                  "ns0:orig": "0",
+                  "ns0:CSOSN": "101",
+                  "ns0:pCredSN": "2.5600",
+                  "ns0:vCredICMSSN": "5.49"
+                }
+              },
+              "ns0:IPI": {
+                "ns0:clEnq": "48025",
+                "ns0:CNPJProd": "00822602000124",
+                "ns0:cEnq": "599",
+                "ns0:IPINT": {
+                  "ns0:CST": "53"
+                }
+              },
+              "ns0:PIS": {
+                "ns0:PISNT": {
+                  "ns0:CST": "07"
+                }
+              },
+              "ns0:COFINS": {
+                "ns0:COFINSNT": {
+                  "ns0:CST": "07"
+                }
+              }
+            }
+          },
+          {
+            "@nItem": "5",
+            "ns0:prod": {
+              "ns0:cProd": "B18525056",
+              "ns0:cEAN": null,
+              "ns0:xProd": "PAPEL MAXPLOT-1.85MX250MX56GRS 3\"",
+              "ns0:NCM": "48025599",
+              "ns0:CFOP": "5101",
+              "ns0:uCom": "Rl",
+              "ns0:qCom": "1.0000",
+              "ns0:vUnCom": "149.8300",
+              "ns0:vProd": "149.83",
+              "ns0:cEANTrib": null,
+              "ns0:uTrib": "RL",
+              "ns0:qTrib": "1.0000",
+              "ns0:vUnTrib": "149.8300",
+              "ns0:indTot": "1"
+            },
+            "ns0:imposto": {
+              "ns0:vTotTrib": "44.95",
+              "ns0:ICMS": {
+                "ns0:ICMSSN101": {
+                  "ns0:orig": "0",
+                  "ns0:CSOSN": "101",
+                  "ns0:pCredSN": "2.5600",
+                  "ns0:vCredICMSSN": "3.84"
+                }
+              },
+              "ns0:IPI": {
+                "ns0:clEnq": "48025",
+                "ns0:CNPJProd": "00822602000124",
+                "ns0:cEnq": "599",
+                "ns0:IPINT": {
+                  "ns0:CST": "53"
+                }
+              },
+              "ns0:PIS": {
+                "ns0:PISNT": {
+                  "ns0:CST": "07"
+                }
+              },
+              "ns0:COFINS": {
+                "ns0:COFINSNT": {
+                  "ns0:CST": "07"
+                }
+              }
+            }
+          }
+        ],
+        "ns0:total": {
+          "ns0:ICMSTot": {
+            "ns0:vBC": "0.00",
+            "ns0:vICMS": "0.00",
+            "ns0:vICMSDeson": "0.00",
+            "ns0:vBCST": "0.00",
+            "ns0:vST": "0.00",
+            "ns0:vProd": "689.91",
+            "ns0:vFrete": "0.00",
+            "ns0:vSeg": "0.00",
+            "ns0:vDesc": "0.00",
+            "ns0:vII": "0.00",
+            "ns0:vIPI": "0.00",
+            "ns0:vPIS": "0.00",
+            "ns0:vCOFINS": "0.00",
+            "ns0:vOutro": "0.00",
+            "ns0:vNF": "689.91",
+            "ns0:vTotTrib": "206.97"
+          }
+        },
+        "ns0:transp": {
+          "ns0:modFrete": "1",
+          "ns0:transporta": {
+            "ns0:xNome": "Cliente Retira",
+            "ns0:xEnder": "Rua ,",
+            "ns0:xMun": "Sao Paulo",
+            "ns0:UF": "SP"
+          },
+          "ns0:vol": {
+            "ns0:qVol": "1",
+            "ns0:marca": "S/m",
+            "ns0:nVol": "S/n",
+            "ns0:pesoL": "0.000",
+            "ns0:pesoB": "0.000"
+          }
+        },
+        "ns0:cobr": {
+          "ns0:fat": {
+            "ns0:nFat": "992346",
+            "ns0:vOrig": "689.91",
+            "ns0:vLiq": "689.91"
+          },
+          "ns0:dup": {
+            "ns0:nDup": "992346",
+            "ns0:dVenc": "2015-04-24",
+            "ns0:vDup": "689.91"
+          }
+        },
+        "ns0:infAdic": {
+          "ns0:infCpl": "\"DOCUMENTO EMITIDO POR EMPRESA OPTANTE PELO SIMPLES NACIONAL;NAO GERA DIREITO A CREDITO FISCAL DE IPI\";\"PERMITE O APROVEITAMENTO DE CREDITO DE ICMS NO VALOR DE: R$17,66 CORRESPONDENTE A ALIQUOTA DE 2.56%\";Vendedor:1 - Guilherme Kavedikado;Valor Aproximado dos Tributos : R$ 206,97. Fonte IBPT (Instituto Brasileiro de Planejamento Tributario)"
+        }
+      },
+      "ns1:Signature": {
+        "ns1:SignedInfo": {
+          "ns1:CanonicalizationMethod": {
+            "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+          },
+          "ns1:SignatureMethod": {
+            "@Algorithm": "http://www.w3.org/2000/09/xmldsig#rsa-sha1"
+          },
+          "ns1:Reference": {
+            "@URI": "#NFe35150300822602000124550010009923461099234656",
+            "ns1:Transforms": {
+              "ns1:Transform": [
+                {
+                  "@Algorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+                },
+                {
+                  "@Algorithm": "http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                }
+              ]
+            },
+            "ns1:DigestMethod": {
+              "@Algorithm": "http://www.w3.org/2000/09/xmldsig#sha1"
+            },
+            "ns1:DigestValue": "oWFauN7opm3Q6yKVaHiEBqW3DwU="
+          }
+        },
+        "ns1:SignatureValue": "KNhzxr9mt2fNcqf4+UIU9XrkzNqw6qg/Mk/uXCXev6YwWf9iF0hLZiRIqKrlUKicCCBzRTxUOiI/\norc/NtXcAHvX/8LVzlvc/OdiuH+XeqDOgl7KCziu6xN71OW016GQZN6VDOqFwyz3Xp2pPZf56nNs\n5CBiLxPtNvX8CM0oMarUKOl8FFZCTnEwWbGXhbShoQ+2MYS9NnC06TCUjXwVQp6T4UAyLjSFuGbD\no2XLpzsVU9UQD2qESpSISGwLEVnRaLeeqJI4MRxtwiEBhSvq0R40sI/ejDHkyAx2XT583msAZV32\ni1T+SDM2tIL3zoDQGa4lEm8WxCIKJFluXX7rxg==",
+        "ns1:KeyInfo": {
+          "ns1:X509Data": {
+            "ns1:X509Certificate": "MIIIajCCBlKgAwIBAgIQTLtMm7tkr6qjM8wZTpUo5jANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG\nEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh\nIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4X\nDTE0MTAxMzAwMDAwMFoXDTE1MTAxMjIzNTk1OVowggEMMQswCQYDVQQGEwJCUjETMBEGA1UEChQK\nSUNQLUJyYXNpbDELMAkGA1UECBMCU1AxEjAQBgNVBAcUCVNBTyBQQVVMTzE2MDQGA1UECxQtU2Vj\ncmV0YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYDVQQLFA1SRkIg\nZS1DTlBKIEExMTgwNgYDVQQLFC9BdXRlbnRpY2FkbyBwb3IgQ2VydGlzaWduIENlcnRpZmljYWRv\ncmEgRGlnaXRhbDE9MDsGA1UEAxM0UExPVEFHIFNJU1RFTUFTIEUgU1VQUklNRU5UT1MgTFREQSBN\nRTowMDgyMjYwMjAwMDEyNDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI0Y640hajWB\nyU0S/7MH47RnCE9dq9Kti72iKBkNwOwZQbysO3InQQZkkZCUn5rGEKKw9R7ddTleZFy3aOR3nGpZ\nqulRP3AkjSWnHmTs1KxdPZra1Py5X0VekDOCk43O1vhsCrml7eiCFzivg5vFwUyAT3u5t8k6Muh9\n6/QymvkQzxhGyIvtB9Qe1256q1oB9HOPSlPijciXrf6d4SdBQouT77W6A1SyOjZ+T/XZhjNXx5HD\nMFyDCEJSM/Zp4k2h+mV7MfVKDKZ2J290YWn9XCI6giLeeNNRS6TK5yrQCZYv0/GiKE3I2nMreEFJ\nqrUpuLpiURJIoqbri59N/AXcxJ0CAwEAAaOCA1gwggNUMIG9BgNVHREEgbUwgbKgPQYFYEwBAwSg\nNAQyMTYxMjE5NjAzNTQ5OTU4MzQwNDAwMDAwMDAwMDAwMDAwMDAwMDU2MjkzNDIzU1NQU1CgJgYF\nYEwBAwKgHQQbTU9OSUNBIE1BUklBIE1VTklaIENBTEFCUklBoBkGBWBMAQMDoBAEDjAwODIyNjAy\nMDAwMTI0oBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEVc3Vwb3J0ZUBwbG90YWcuY29tLmJyMAkG\nA1UdEwQCMAAwHwYDVR0jBBgwFoAULpHq1m3lslmC3DiFKXY0FlY80D4wDgYDVR0PAQH/BAQDAgXg\nMH8GA1UdIAR4MHYwdAYGYEwBAgEMMGowaAYIKwYBBQUHAgEWXGh0dHA6Ly9pY3AtYnJhc2lsLmNl\ncnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9SRkIvRFBDX0FDX0Nl\ncnRpc2lnbl9SRkIucGRmMIIBFgYDVR0fBIIBDTCCAQkwV6BVoFOGUWh0dHA6Ly9pY3AtYnJhc2ls\nLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzQvTGF0ZXN0\nQ1JMLmNybDBWoFSgUoZQaHR0cDovL2ljcC1icmFzaWwub3V0cmFsY3IuY29tLmJyL3JlcG9zaXRv\ncmlvL2xjci9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9yZXBv\nc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25SRkJHNC9M\nYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBmwYIKwYBBQUHAQEE\ngY4wgYswXwYIKwYBBQUHMAKGU2h0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVw\nb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9SRkJfRzQucDdjMCgGCCsGAQUFBzAB\nhhxodHRwOi8vb2NzcC5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQBKs2v9oWD9\n7L3/P3v6Xvfng4Ul1H53BuUPdrQac1lkS9B0Id7NeSrgXFw+Wm6+fanyUsXYeYGsAQ3dw6hIEKS1\nvHm5/8UtL5qaQiuGISY2MxfpUy0gA4qkPB05+eTBr6VUpejpqBORAQTjO6j6NI+HpRsCyTUpG9tJ\nJStGw63QZpMLJCHsh+lKPrl8ESt9FElbsLo8XYqYvClA53gZj3exLKzRgw0ayAW5DYrIOprB0r58\nqLRwLpRdtG4LIQU0JSiFEF2snJ2wGAX1bFuvjmv7QmvTfbeRKH4ttkkU7Fk1im9cN8AxLOg61tZ7\njR+aTeFXjQ2Bbw9bEzRHGVq3VZOI6007Z7pwOZ4eqBO0I/LT+BHZ2SnFJ8UKOI1xgL5EMapIZLbJ\n+lr3bJcjl0WoPlxZs8TvutjG9Fbv08ZpgPo35IRx9K1aDJ514sDTqHwQgXYI279o7i+JJylH3rDv\n7ahVNgJgkfS/j5b0P1ggwQnPtbSDLPt3LX0A+wa9zrTxz5v0/ALddjEFoBkyp+SN6H605yenmy0x\nCj7bxTnL+am8nrxufOQXdpHFRGuBhhe0qlRM+EVyGZbl29kN2zm4OHZCA5KAnMcChDZrY3QoYlLK\nk3vVkmzq0AGmoO4CxOr33CBFzLbtDHFAoCotvE+x58E7G3CX3J+t1U5dz8PBBsYNkg=="
+          }
+        }
+      }
+    },
+    "ns0:protNFe": {
+      "@versao": "3.10",
+      "ns0:infProt": {
+        "ns0:tpAmb": "2",
+        "ns0:verAplic": "SP_NFE_PL_008f",
+        "ns0:chNFe": "35150300822602000124550010009923461099234656",
+        "ns0:dhRecbto": "2015-03-27T16:50:50-03:00",
+        "ns0:nProt": "135150001686732",
+        "ns0:digVal": "oWFauN7opm3Q6yKVaHiEBqW3DwU=",
+        "ns0:cStat": "100",
+        "ns0:xMotivo": "Autorizado o uso da NF-e"
+      }
+    }
+  }
+}

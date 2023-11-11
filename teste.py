@@ -20,9 +20,9 @@ def notas(name):
     return render_template(
         "nota.html", notasValidas=notasValidas, 
         qtdNotas=len(notasValidas),
-        qtdProdutos=consultas.consulta_d(teste3, name+".json"),
         name=name,
-        detalhes=consultas.detalhes(teste3, name+".json")
+        detalhesNota=consultas.detalhesNota(teste3, name+".json")
+        # detalhes=consultas.detalhes(teste3, name+".json")
         )
 
 if __name__ == "__main__":
@@ -40,5 +40,6 @@ if __name__ == "__main__":
     geralSearch = consultas.geralSearch(teste3)
     consulta_c = consultas.consulta_c(teste3)
     consulta_d = consultas.consulta_d(teste3)
+    
         
     app.run(debug=True)
