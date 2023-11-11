@@ -1,6 +1,7 @@
 # Detalhes:
 Schema de json criado pelo site: https://www.liquid-technologies.com/online-json-to-schema-converter e editado <br>
 IDE ustilizada : VSCodium
+OS ustilizado : Ubuntu 22.04.3 LTS 
 # Passos para rodar no linux:
  1- ter o python 3.10.12 instalado <br>
  2- utilizar o comando no terminal: pip install xmltodict <br>
