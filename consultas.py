@@ -94,6 +94,12 @@ def detalhesNota(files: Search, file: str):
     except:
         ICMSRetProdutos = 0
 
+    issqn = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ISSQNtot/ns0:vISS")[file]
+    icms = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vICMS")[file]
+    ipi = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vIPI")[file]
+    pis = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vPIS")[file]
+    cofins = files.search("ns0:nfeProc/ns0:NFe/ns0:infNFe/ns0:total/ns0:ICMSTot/ns0:vCOFINS")[file]
+
     consulta={
         "valorProdutos" : valorProdutos,
         "qtdProdutos" : qtdProdutos,
@@ -104,6 +110,11 @@ def detalhesNota(files: Search, file: str):
         "nomeProdutos" : nomeProdutos,
         "codProdutos" : codProdutos,
         "ICMSRetProdutos" : ICMSRetProdutos,
+        "issqn" : issqn,
+        "icms" : icms,
+        "ipi" : ipi,
+        "pis" : pis,
+        "cofins" : cofins,
         "precoProdutos" : precoProdutos
     }
 

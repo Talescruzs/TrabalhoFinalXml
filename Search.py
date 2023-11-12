@@ -45,7 +45,7 @@ class Search:
         for file in filesToSearch:
             results[file] = self.__treeSearch(processedSearch, file)
             if(type(results[file])==dict):
-                results[file] = '0'
+                results[file] = '0.0'
 
         for k in results:
             try:
